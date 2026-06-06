@@ -58,10 +58,36 @@ function getAverageTotal(race) {
 }
 
 function getLargestSpread(race) {
+  const range = getCombinedRange(race);
   return abilities
     .map((ability) => ({
       ability,
-      spread: race.stats.max[ability] - race.stats.min[ability],
+      spread: range.max[ability] - range.min[ability],
+    }))
+    .sort((left, right) => right.spread - left.spread)[0];
+}
+
+function getCombinedRange(race) {
+  return race.combinedRange || {
+    min: race.stats.min,
+    max: race.stats.max,
+  };
+}
+
+function getBirthAverageRange(race) {
+  return race.birthAverageRange || {
+    min: race.stats.avg,
+    mean: race.stats.avg,
+    max: race.stats.avg,
+  };
+}
+
+function getLargestBirthAverageSpread(race) {
+  const range = getBirthAverageRange(race);
+  return abilities
+    .map((ability) => ({
+      ability,
+      spread: range.max[ability] - range.min[ability],
     }))
     .sort((left, right) => right.spread - left.spread)[0];
 }
@@ -86,38 +112,51 @@ function renderRaceOptions() {
 }
 
 function buildChartData(race) {
+  const birthRange = getBirthAverageRange(race);
+  const combinedRange = getCombinedRange(race);
+
   return {
     labels: abilities,
     datasets: [
       {
-        label: "最小",
-        data: abilities.map((ability) => race.stats.min[ability]),
+        label: "ダイス最小",
+        data: abilities.map((ability) => combinedRange.min[ability]),
         borderColor: "#3b6ea8",
-        backgroundColor: "rgba(59, 110, 168, 0.08)",
-        pointBackgroundColor: "#3b6ea8",
+        backgroundColor: "rgba(59, 110, 168, 0.04)",
         pointRadius: 0,
         pointHoverRadius: 0,
         borderWidth: 2,
+        fill: false,
       },
       {
-        label: "平均",
-        data: abilities.map((ability) => race.stats.avg[ability]),
-        borderColor: "#2f7d6d",
-        backgroundColor: "rgba(47, 125, 109, 0.12)",
-        pointBackgroundColor: "#2f7d6d",
+        label: "生まれ平均帯 下限",
+        data: abilities.map((ability) => birthRange.min[ability]),
+        borderColor: "rgba(47, 125, 109, 0)",
+        backgroundColor: "rgba(47, 125, 109, 0)",
         pointRadius: 0,
         pointHoverRadius: 0,
-        borderWidth: 3,
+        borderWidth: 0,
+        fill: false,
       },
       {
-        label: "最大",
-        data: abilities.map((ability) => race.stats.max[ability]),
+        label: "生まれ平均帯",
+        data: abilities.map((ability) => birthRange.max[ability]),
+        borderColor: "rgba(47, 125, 109, 0)",
+        backgroundColor: "rgba(47, 125, 109, 0.16)",
+        pointRadius: 0,
+        pointHoverRadius: 0,
+        borderWidth: 0,
+        fill: "-1",
+      },
+      {
+        label: "ダイス最大",
+        data: abilities.map((ability) => combinedRange.max[ability]),
         borderColor: "#b65f2a",
-        backgroundColor: "rgba(182, 95, 42, 0.08)",
-        pointBackgroundColor: "#b65f2a",
+        backgroundColor: "rgba(182, 95, 42, 0.04)",
         pointRadius: 0,
         pointHoverRadius: 0,
         borderWidth: 2,
+        fill: false,
       },
     ],
   };
@@ -173,6 +212,11 @@ function renderChart(race) {
       plugins: {
         legend: {
           position: "bottom",
+          labels: {
+            filter(item) {
+              return item.text !== "生まれ平均帯 下限";
+            },
+          },
         },
         title: {
           display: true,
@@ -200,6 +244,7 @@ function renderChart(race) {
 
 function renderRaceInfo(race) {
   const largestSpread = getLargestSpread(race);
+  const largestBirthAverageSpread = getLargestBirthAverageSpread(race);
 
   raceInfo.innerHTML = `
     <h2>${race.raceName}</h2>
@@ -208,6 +253,7 @@ function renderRaceInfo(race) {
       <div><dt>生まれ数</dt><dd>${race.birthCount}</dd></div>
       <div><dt>平均値合計</dt><dd>${formatNumber(getAverageTotal(race))}</dd></div>
       <div><dt>差が大きい能力</dt><dd>${largestSpread.ability}（差 ${formatNumber(largestSpread.spread)}）</dd></div>
+      <div><dt>生まれ差が大きい能力</dt><dd>${largestBirthAverageSpread.ability}（差 ${formatNumber(largestBirthAverageSpread.spread)}）</dd></div>
     </dl>
   `;
 }

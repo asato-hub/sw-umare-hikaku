@@ -17,9 +17,7 @@
     "sourceFile": "data/生まれ表一覧.xlsx",
     "sourceSheet": "発表順",
     "availableSheets": [
-      "発表順",
-      "系統順",
-      "能力値合計一覧"
+      "発表順"
     ],
     "abilities": [
       "器用",
@@ -59,29 +57,14 @@
       "Birth rows contain technique/body/mind fixed values; each fixed value is added to two abilities.",
       "Rows such as タビット（パイカ種） and ウィークリング（タンノズ） are treated as separate race variants because their racial dice expressions differ."
     ],
-    "validationWarnings": [
-      {
-        "raceName": "アルヴ",
-        "summarySheetTotal": 87,
-        "calculatedAverageTotal": 90,
-        "difference": 3,
-        "note": "Detailed six-ability values were used for JSON aggregation."
-      },
-      {
-        "raceName": "ケンタウロス",
-        "summarySheetTotal": 86,
-        "calculatedAverageTotal": 93,
-        "difference": 7,
-        "note": "Detailed six-ability values were used for JSON aggregation."
-      }
-    ]
+    "validationWarnings": []
   },
   "races": [
     {
       "raceName": "人間",
       "source": "Ⅰ",
       "excelRow": 4,
-      "birthCount": 26,
+      "birthCount": 25,
       "baseExpressions": {
         "器用": "2d",
         "敏捷": "2d",
@@ -92,28 +75,72 @@
       },
       "stats": {
         "min": {
-          "器用": 8.5385,
-          "敏捷": 8.5385,
-          "筋力": 8.5769,
-          "生命力": 8.5769,
-          "知力": 9.3077,
-          "精神力": 9.3077
+          "器用": 8.72,
+          "敏捷": 8.72,
+          "筋力": 8.76,
+          "生命力": 8.76,
+          "知力": 9.52,
+          "精神力": 9.52
         },
         "avg": {
-          "器用": 13.7308,
-          "敏捷": 13.7308,
-          "筋力": 13.7692,
-          "生命力": 13.7692,
-          "知力": 14.5,
-          "精神力": 14.5
+          "器用": 13.72,
+          "敏捷": 13.72,
+          "筋力": 13.76,
+          "生命力": 13.76,
+          "知力": 14.52,
+          "精神力": 14.52
         },
         "max": {
-          "器用": 18.9231,
-          "敏捷": 18.9231,
-          "筋力": 18.9615,
-          "生命力": 18.9615,
-          "知力": 19.6923,
-          "精神力": 19.6923
+          "器用": 18.72,
+          "敏捷": 18.72,
+          "筋力": 18.76,
+          "生命力": 18.76,
+          "知力": 19.52,
+          "精神力": 19.52
+        }
+      },
+      "birthAverageRange": {
+        "min": {
+          "器用": 10,
+          "敏捷": 10,
+          "筋力": 11,
+          "生命力": 11,
+          "知力": 11,
+          "精神力": 11
+        },
+        "mean": {
+          "器用": 13.72,
+          "敏捷": 13.72,
+          "筋力": 13.76,
+          "生命力": 13.76,
+          "知力": 14.52,
+          "精神力": 14.52
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 17,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 17,
+          "精神力": 17
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 5,
+          "敏捷": 5,
+          "筋力": 6,
+          "生命力": 6,
+          "知力": 6,
+          "精神力": 6
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 22,
+          "筋力": 22,
+          "生命力": 22,
+          "知力": 22,
+          "精神力": 22
         }
       },
       "births": [
@@ -483,58 +510,6 @@
         },
         {
           "row": 12,
-          "birthName": "冒険者",
-          "initialSkill": "なし",
-          "source": "Ⅰ",
-          "fixed": {
-            "technique": {
-              "raw": "2d",
-              "min": 2,
-              "avg": 7,
-              "max": 12
-            },
-            "body": {
-              "raw": "2d",
-              "min": 2,
-              "avg": 7,
-              "max": 12
-            },
-            "mind": {
-              "raw": "2d",
-              "min": 2,
-              "avg": 7,
-              "max": 12
-            }
-          },
-          "stats": {
-            "min": {
-              "器用": 4,
-              "敏捷": 4,
-              "筋力": 4,
-              "生命力": 4,
-              "知力": 4,
-              "精神力": 4
-            },
-            "avg": {
-              "器用": 14,
-              "敏捷": 14,
-              "筋力": 14,
-              "生命力": 14,
-              "知力": 14,
-              "精神力": 14
-            },
-            "max": {
-              "器用": 24,
-              "敏捷": 24,
-              "筋力": 24,
-              "生命力": 24,
-              "知力": 24,
-              "精神力": 24
-            }
-          }
-        },
-        {
-          "row": 13,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅱ",
@@ -586,7 +561,7 @@
           }
         },
         {
-          "row": 14,
+          "row": 13,
           "birthName": "剣士",
           "initialSkill": "フェンサー",
           "source": "Ⅱ",
@@ -638,7 +613,7 @@
           }
         },
         {
-          "row": 15,
+          "row": 14,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "Ⅱ",
@@ -690,7 +665,7 @@
           }
         },
         {
-          "row": 16,
+          "row": 15,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "Ⅱ",
@@ -742,7 +717,7 @@
           }
         },
         {
-          "row": 17,
+          "row": 16,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -794,7 +769,7 @@
           }
         },
         {
-          "row": 18,
+          "row": 17,
           "birthName": "歌人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -846,7 +821,7 @@
           }
         },
         {
-          "row": 19,
+          "row": 18,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -898,7 +873,7 @@
           }
         },
         {
-          "row": 20,
+          "row": 19,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -950,7 +925,7 @@
           }
         },
         {
-          "row": 21,
+          "row": 20,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -1002,7 +977,7 @@
           }
         },
         {
-          "row": 22,
+          "row": 21,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -1054,7 +1029,7 @@
           }
         },
         {
-          "row": 23,
+          "row": 22,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -1106,7 +1081,7 @@
           }
         },
         {
-          "row": 24,
+          "row": 23,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -1158,7 +1133,7 @@
           }
         },
         {
-          "row": 25,
+          "row": 24,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -1210,7 +1185,7 @@
           }
         },
         {
-          "row": 26,
+          "row": 25,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM",
@@ -1262,7 +1237,7 @@
           }
         },
         {
-          "row": 27,
+          "row": 26,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -1314,7 +1289,7 @@
           }
         },
         {
-          "row": 28,
+          "row": 27,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "BM",
@@ -1366,7 +1341,7 @@
           }
         },
         {
-          "row": 29,
+          "row": 28,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -1418,7 +1393,7 @@
           }
         },
         {
-          "row": 30,
+          "row": 29,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM",
@@ -1474,7 +1449,7 @@
     {
       "raceName": "エルフ",
       "source": "Ⅰ",
-      "excelRow": 32,
+      "excelRow": 31,
       "birthCount": 24,
       "baseExpressions": {
         "器用": "2d",
@@ -1510,9 +1485,53 @@
           "精神力": 23.4583
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 15,
+          "敏捷": 15,
+          "筋力": 5.5,
+          "生命力": 9,
+          "知力": 15,
+          "精神力": 15
+        },
+        "mean": {
+          "器用": 17.25,
+          "敏捷": 17.25,
+          "筋力": 7.7917,
+          "生命力": 11.2917,
+          "知力": 18.4583,
+          "精神力": 18.4583
+        },
+        "max": {
+          "器用": 20,
+          "敏捷": 20,
+          "筋力": 9.5,
+          "生命力": 13,
+          "知力": 21,
+          "精神力": 21
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 10,
+          "敏捷": 10,
+          "筋力": 3,
+          "生命力": 4,
+          "知力": 10,
+          "精神力": 10
+        },
+        "max": {
+          "器用": 25,
+          "敏捷": 25,
+          "筋力": 12,
+          "生命力": 18,
+          "知力": 26,
+          "精神力": 26
+        }
+      },
       "births": [
         {
-          "row": 33,
+          "row": 32,
           "birthName": "剣士",
           "initialSkill": "フェンサー",
           "source": "Ⅰ",
@@ -1564,7 +1583,7 @@
           }
         },
         {
-          "row": 34,
+          "row": 33,
           "birthName": "薬師",
           "initialSkill": "セージ＆レンジャー",
           "source": "Ⅰ",
@@ -1616,7 +1635,7 @@
           }
         },
         {
-          "row": 35,
+          "row": 34,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅰ",
@@ -1668,7 +1687,7 @@
           }
         },
         {
-          "row": 36,
+          "row": 35,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "Ⅰ",
@@ -1720,7 +1739,7 @@
           }
         },
         {
-          "row": 37,
+          "row": 36,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "Ⅰ",
@@ -1772,7 +1791,7 @@
           }
         },
         {
-          "row": 38,
+          "row": 37,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅰ",
@@ -1824,7 +1843,7 @@
           }
         },
         {
-          "row": 39,
+          "row": 38,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -1876,7 +1895,7 @@
           }
         },
         {
-          "row": 40,
+          "row": 39,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "Ⅱ",
@@ -1928,7 +1947,7 @@
           }
         },
         {
-          "row": 41,
+          "row": 40,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -1980,7 +1999,7 @@
           }
         },
         {
-          "row": 42,
+          "row": 41,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "Ⅱ",
@@ -2032,7 +2051,7 @@
           }
         },
         {
-          "row": 43,
+          "row": 42,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -2084,7 +2103,7 @@
           }
         },
         {
-          "row": 44,
+          "row": 43,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -2136,7 +2155,7 @@
           }
         },
         {
-          "row": 45,
+          "row": 44,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -2188,7 +2207,7 @@
           }
         },
         {
-          "row": 46,
+          "row": 45,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -2240,7 +2259,7 @@
           }
         },
         {
-          "row": 47,
+          "row": 46,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -2292,7 +2311,7 @@
           }
         },
         {
-          "row": 48,
+          "row": 47,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -2344,7 +2363,7 @@
           }
         },
         {
-          "row": 49,
+          "row": 48,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -2396,7 +2415,7 @@
           }
         },
         {
-          "row": 50,
+          "row": 49,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -2448,7 +2467,7 @@
           }
         },
         {
-          "row": 51,
+          "row": 50,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM",
@@ -2500,7 +2519,7 @@
           }
         },
         {
-          "row": 52,
+          "row": 51,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -2552,7 +2571,7 @@
           }
         },
         {
-          "row": 53,
+          "row": 52,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -2604,7 +2623,7 @@
           }
         },
         {
-          "row": 54,
+          "row": 53,
           "birthName": "魔導師",
           "initialSkill": "ソーサラー＆コンジャラー",
           "source": "AR",
@@ -2656,7 +2675,7 @@
           }
         },
         {
-          "row": 55,
+          "row": 54,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "AR",
@@ -2708,7 +2727,7 @@
           }
         },
         {
-          "row": 56,
+          "row": 55,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -2764,7 +2783,7 @@
     {
       "raceName": "ドワーフ",
       "source": "Ⅰ",
-      "excelRow": 58,
+      "excelRow": 57,
       "birthCount": 18,
       "baseExpressions": {
         "器用": "2d+6",
@@ -2800,9 +2819,53 @@
           "精神力": 24.7778
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 16,
+          "敏捷": 6.5,
+          "筋力": 13,
+          "生命力": 13,
+          "知力": 7.5,
+          "精神力": 17
+        },
+        "mean": {
+          "器用": 17.9444,
+          "敏捷": 8.4444,
+          "筋力": 15.2778,
+          "生命力": 15.2778,
+          "知力": 10.2778,
+          "精神力": 19.7778
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 9.5,
+          "筋力": 18,
+          "生命力": 18,
+          "知力": 12.5,
+          "精神力": 22
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 11,
+          "敏捷": 4,
+          "筋力": 8,
+          "生命力": 8,
+          "知力": 5,
+          "精神力": 12
+        },
+        "max": {
+          "器用": 24,
+          "敏捷": 12,
+          "筋力": 23,
+          "生命力": 23,
+          "知力": 15,
+          "精神力": 27
+        }
+      },
       "births": [
         {
-          "row": 59,
+          "row": 58,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅰ",
@@ -2854,7 +2917,7 @@
           }
         },
         {
-          "row": 60,
+          "row": 59,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "Ⅰ",
@@ -2906,7 +2969,7 @@
           }
         },
         {
-          "row": 61,
+          "row": 60,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "Ⅰ",
@@ -2958,7 +3021,7 @@
           }
         },
         {
-          "row": 62,
+          "row": 61,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅰ",
@@ -3010,7 +3073,7 @@
           }
         },
         {
-          "row": 63,
+          "row": 62,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "Ⅰ",
@@ -3062,7 +3125,7 @@
           }
         },
         {
-          "row": 64,
+          "row": 63,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅱ",
@@ -3114,7 +3177,7 @@
           }
         },
         {
-          "row": 65,
+          "row": 64,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -3166,7 +3229,7 @@
           }
         },
         {
-          "row": 66,
+          "row": 65,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -3218,7 +3281,7 @@
           }
         },
         {
-          "row": 67,
+          "row": 66,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -3270,7 +3333,7 @@
           }
         },
         {
-          "row": 68,
+          "row": 67,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -3322,7 +3385,7 @@
           }
         },
         {
-          "row": 69,
+          "row": 68,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -3374,7 +3437,7 @@
           }
         },
         {
-          "row": 70,
+          "row": 69,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -3426,7 +3489,7 @@
           }
         },
         {
-          "row": 71,
+          "row": 70,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -3478,7 +3541,7 @@
           }
         },
         {
-          "row": 72,
+          "row": 71,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -3530,7 +3593,7 @@
           }
         },
         {
-          "row": 73,
+          "row": 72,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM",
@@ -3582,7 +3645,7 @@
           }
         },
         {
-          "row": 74,
+          "row": 73,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -3634,7 +3697,7 @@
           }
         },
         {
-          "row": 75,
+          "row": 74,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "BM",
@@ -3686,7 +3749,7 @@
           }
         },
         {
-          "row": 76,
+          "row": 75,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -3742,7 +3805,7 @@
     {
       "raceName": "タビット",
       "source": "Ⅰ",
-      "excelRow": 78,
+      "excelRow": 77,
       "birthCount": 18,
       "baseExpressions": {
         "器用": "1d",
@@ -3778,9 +3841,53 @@
           "精神力": 21.4444
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 8.5,
+          "敏捷": 8.5,
+          "筋力": 8.5,
+          "生命力": 12,
+          "知力": 21,
+          "精神力": 15
+        },
+        "mean": {
+          "器用": 9.6111,
+          "敏捷": 9.6111,
+          "筋力": 9.9444,
+          "生命力": 13.4444,
+          "知力": 22.4444,
+          "精神力": 16.4444
+        },
+        "max": {
+          "器用": 11.5,
+          "敏捷": 11.5,
+          "筋力": 11.5,
+          "生命力": 15,
+          "知力": 24,
+          "精神力": 18
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 6,
+          "敏捷": 6,
+          "筋力": 6,
+          "生命力": 7,
+          "知力": 16,
+          "精神力": 10
+        },
+        "max": {
+          "器用": 14,
+          "敏捷": 14,
+          "筋力": 14,
+          "生命力": 20,
+          "知力": 29,
+          "精神力": 23
+        }
+      },
       "births": [
         {
-          "row": 81,
+          "row": 80,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "Ⅰ",
@@ -3832,7 +3939,7 @@
           }
         },
         {
-          "row": 82,
+          "row": 81,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "Ⅰ",
@@ -3884,7 +3991,7 @@
           }
         },
         {
-          "row": 83,
+          "row": 82,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅰ",
@@ -3936,7 +4043,7 @@
           }
         },
         {
-          "row": 84,
+          "row": 83,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "Ⅰ",
@@ -3988,7 +4095,7 @@
           }
         },
         {
-          "row": 85,
+          "row": 84,
           "birthName": "魔導師",
           "initialSkill": "ソーサラー＆コンジャラー",
           "source": "Ⅱ",
@@ -4040,7 +4147,7 @@
           }
         },
         {
-          "row": 86,
+          "row": 85,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -4092,7 +4199,7 @@
           }
         },
         {
-          "row": 87,
+          "row": 86,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -4144,7 +4251,7 @@
           }
         },
         {
-          "row": 88,
+          "row": 87,
           "birthName": "薬師",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -4196,7 +4303,7 @@
           }
         },
         {
-          "row": 89,
+          "row": 88,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -4248,7 +4355,7 @@
           }
         },
         {
-          "row": 90,
+          "row": 89,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -4300,7 +4407,7 @@
           }
         },
         {
-          "row": 91,
+          "row": 90,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -4352,7 +4459,7 @@
           }
         },
         {
-          "row": 92,
+          "row": 91,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -4404,7 +4511,7 @@
           }
         },
         {
-          "row": 93,
+          "row": 92,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -4456,7 +4563,7 @@
           }
         },
         {
-          "row": 94,
+          "row": 93,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM／AR",
@@ -4508,7 +4615,7 @@
           }
         },
         {
-          "row": 95,
+          "row": 94,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM／AR",
@@ -4560,7 +4667,7 @@
           }
         },
         {
-          "row": 96,
+          "row": 95,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM／AR",
@@ -4612,7 +4719,7 @@
           }
         },
         {
-          "row": 97,
+          "row": 96,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -4664,7 +4771,7 @@
           }
         },
         {
-          "row": 98,
+          "row": 97,
           "birthName": "趣味人",
           "initialSkill": "セージ＆バード",
           "source": "AR",
@@ -4720,7 +4827,7 @@
     {
       "raceName": "タビット（パイカ種）",
       "source": "AR",
-      "excelRow": 79,
+      "excelRow": 78,
       "birthCount": 18,
       "baseExpressions": {
         "器用": "1d+3",
@@ -4756,9 +4863,53 @@
           "精神力": 21.4444
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 11.5,
+          "敏捷": 11.5,
+          "筋力": 5.5,
+          "生命力": 9,
+          "知力": 21,
+          "精神力": 15
+        },
+        "mean": {
+          "器用": 12.6111,
+          "敏捷": 12.6111,
+          "筋力": 6.9444,
+          "生命力": 10.4444,
+          "知力": 22.4444,
+          "精神力": 16.4444
+        },
+        "max": {
+          "器用": 14.5,
+          "敏捷": 14.5,
+          "筋力": 8.5,
+          "生命力": 12,
+          "知力": 24,
+          "精神力": 18
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 9,
+          "筋力": 3,
+          "生命力": 4,
+          "知力": 16,
+          "精神力": 10
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 17,
+          "筋力": 11,
+          "生命力": 17,
+          "知力": 29,
+          "精神力": 23
+        }
+      },
       "births": [
         {
-          "row": 81,
+          "row": 80,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "Ⅰ",
@@ -4810,7 +4961,7 @@
           }
         },
         {
-          "row": 82,
+          "row": 81,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "Ⅰ",
@@ -4862,7 +5013,7 @@
           }
         },
         {
-          "row": 83,
+          "row": 82,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅰ",
@@ -4914,7 +5065,7 @@
           }
         },
         {
-          "row": 84,
+          "row": 83,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "Ⅰ",
@@ -4966,7 +5117,7 @@
           }
         },
         {
-          "row": 85,
+          "row": 84,
           "birthName": "魔導師",
           "initialSkill": "ソーサラー＆コンジャラー",
           "source": "Ⅱ",
@@ -5018,7 +5169,7 @@
           }
         },
         {
-          "row": 86,
+          "row": 85,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -5070,7 +5221,7 @@
           }
         },
         {
-          "row": 87,
+          "row": 86,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -5122,7 +5273,7 @@
           }
         },
         {
-          "row": 88,
+          "row": 87,
           "birthName": "薬師",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -5174,7 +5325,7 @@
           }
         },
         {
-          "row": 89,
+          "row": 88,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -5226,7 +5377,7 @@
           }
         },
         {
-          "row": 90,
+          "row": 89,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -5278,7 +5429,7 @@
           }
         },
         {
-          "row": 91,
+          "row": 90,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -5330,7 +5481,7 @@
           }
         },
         {
-          "row": 92,
+          "row": 91,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -5382,7 +5533,7 @@
           }
         },
         {
-          "row": 93,
+          "row": 92,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -5434,7 +5585,7 @@
           }
         },
         {
-          "row": 94,
+          "row": 93,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM／AR",
@@ -5486,7 +5637,7 @@
           }
         },
         {
-          "row": 95,
+          "row": 94,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM／AR",
@@ -5538,7 +5689,7 @@
           }
         },
         {
-          "row": 96,
+          "row": 95,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM／AR",
@@ -5590,7 +5741,7 @@
           }
         },
         {
-          "row": 97,
+          "row": 96,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -5642,7 +5793,7 @@
           }
         },
         {
-          "row": 98,
+          "row": 97,
           "birthName": "趣味人",
           "initialSkill": "セージ＆バード",
           "source": "AR",
@@ -5698,7 +5849,7 @@
     {
       "raceName": "タビット（リパス種）",
       "source": "AR",
-      "excelRow": 80,
+      "excelRow": 79,
       "birthCount": 18,
       "baseExpressions": {
         "器用": "1d",
@@ -5734,9 +5885,53 @@
           "精神力": 18.4444
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 8.5,
+          "敏捷": 11.5,
+          "筋力": 11.5,
+          "生命力": 12,
+          "知力": 18,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 9.6111,
+          "敏捷": 12.6111,
+          "筋力": 12.9444,
+          "生命力": 13.4444,
+          "知力": 19.4444,
+          "精神力": 13.4444
+        },
+        "max": {
+          "器用": 11.5,
+          "敏捷": 14.5,
+          "筋力": 14.5,
+          "生命力": 15,
+          "知力": 21,
+          "精神力": 15
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 6,
+          "敏捷": 9,
+          "筋力": 9,
+          "生命力": 7,
+          "知力": 13,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 14,
+          "敏捷": 17,
+          "筋力": 17,
+          "生命力": 20,
+          "知力": 26,
+          "精神力": 20
+        }
+      },
       "births": [
         {
-          "row": 81,
+          "row": 80,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "Ⅰ",
@@ -5788,7 +5983,7 @@
           }
         },
         {
-          "row": 82,
+          "row": 81,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "Ⅰ",
@@ -5840,7 +6035,7 @@
           }
         },
         {
-          "row": 83,
+          "row": 82,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅰ",
@@ -5892,7 +6087,7 @@
           }
         },
         {
-          "row": 84,
+          "row": 83,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "Ⅰ",
@@ -5944,7 +6139,7 @@
           }
         },
         {
-          "row": 85,
+          "row": 84,
           "birthName": "魔導師",
           "initialSkill": "ソーサラー＆コンジャラー",
           "source": "Ⅱ",
@@ -5996,7 +6191,7 @@
           }
         },
         {
-          "row": 86,
+          "row": 85,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -6048,7 +6243,7 @@
           }
         },
         {
-          "row": 87,
+          "row": 86,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -6100,7 +6295,7 @@
           }
         },
         {
-          "row": 88,
+          "row": 87,
           "birthName": "薬師",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -6152,7 +6347,7 @@
           }
         },
         {
-          "row": 89,
+          "row": 88,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -6204,7 +6399,7 @@
           }
         },
         {
-          "row": 90,
+          "row": 89,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -6256,7 +6451,7 @@
           }
         },
         {
-          "row": 91,
+          "row": 90,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -6308,7 +6503,7 @@
           }
         },
         {
-          "row": 92,
+          "row": 91,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -6360,7 +6555,7 @@
           }
         },
         {
-          "row": 93,
+          "row": 92,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -6412,7 +6607,7 @@
           }
         },
         {
-          "row": 94,
+          "row": 93,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM／AR",
@@ -6464,7 +6659,7 @@
           }
         },
         {
-          "row": 95,
+          "row": 94,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM／AR",
@@ -6516,7 +6711,7 @@
           }
         },
         {
-          "row": 96,
+          "row": 95,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM／AR",
@@ -6568,7 +6763,7 @@
           }
         },
         {
-          "row": 97,
+          "row": 96,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -6620,7 +6815,7 @@
           }
         },
         {
-          "row": 98,
+          "row": 97,
           "birthName": "趣味人",
           "initialSkill": "セージ＆バード",
           "source": "AR",
@@ -6676,7 +6871,7 @@
     {
       "raceName": "ルーンフォーク",
       "source": "Ⅰ",
-      "excelRow": 100,
+      "excelRow": 99,
       "birthCount": 23,
       "baseExpressions": {
         "器用": "2d",
@@ -6712,9 +6907,53 @@
           "精神力": 13.1739
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 10.5,
+          "筋力": 13,
+          "生命力": 13,
+          "知力": 12,
+          "精神力": 8.5
+        },
+        "mean": {
+          "器用": 16.913,
+          "敏捷": 13.413,
+          "筋力": 15.913,
+          "生命力": 15.913,
+          "知力": 14.1739,
+          "精神力": 10.6739
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 15.5,
+          "筋力": 19,
+          "生命力": 19,
+          "知力": 17,
+          "精神力": 13.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 8,
+          "筋力": 8,
+          "生命力": 8,
+          "知力": 7,
+          "精神力": 6
+        },
+        "max": {
+          "器用": 24,
+          "敏捷": 18,
+          "筋力": 24,
+          "生命力": 24,
+          "知力": 22,
+          "精神力": 16
+        }
+      },
       "births": [
         {
-          "row": 101,
+          "row": 100,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅰ",
@@ -6766,7 +7005,7 @@
           }
         },
         {
-          "row": 102,
+          "row": 101,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅰ",
@@ -6818,7 +7057,7 @@
           }
         },
         {
-          "row": 103,
+          "row": 102,
           "birthName": "戦士",
           "initialSkill": "ファイターorグラップラー",
           "source": "Ⅰ",
@@ -6870,7 +7109,7 @@
           }
         },
         {
-          "row": 104,
+          "row": 103,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "Ⅰ",
@@ -6922,7 +7161,7 @@
           }
         },
         {
-          "row": 105,
+          "row": 104,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "Ⅰ",
@@ -6974,7 +7213,7 @@
           }
         },
         {
-          "row": 106,
+          "row": 105,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "Ⅱ",
@@ -7026,7 +7265,7 @@
           }
         },
         {
-          "row": 107,
+          "row": 106,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -7078,7 +7317,7 @@
           }
         },
         {
-          "row": 108,
+          "row": 107,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "Ⅱ",
@@ -7130,7 +7369,7 @@
           }
         },
         {
-          "row": 109,
+          "row": 108,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -7182,7 +7421,7 @@
           }
         },
         {
-          "row": 110,
+          "row": 109,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "Ⅱ",
@@ -7234,7 +7473,7 @@
           }
         },
         {
-          "row": 111,
+          "row": 110,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -7286,7 +7525,7 @@
           }
         },
         {
-          "row": 112,
+          "row": 111,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -7338,7 +7577,7 @@
           }
         },
         {
-          "row": 113,
+          "row": 112,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -7390,7 +7629,7 @@
           }
         },
         {
-          "row": 114,
+          "row": 113,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -7442,7 +7681,7 @@
           }
         },
         {
-          "row": 115,
+          "row": 114,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM",
@@ -7494,7 +7733,7 @@
           }
         },
         {
-          "row": 116,
+          "row": 115,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -7546,7 +7785,7 @@
           }
         },
         {
-          "row": 117,
+          "row": 116,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "BM",
@@ -7598,7 +7837,7 @@
           }
         },
         {
-          "row": 118,
+          "row": 117,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -7650,7 +7889,7 @@
           }
         },
         {
-          "row": 119,
+          "row": 118,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "AR",
@@ -7702,7 +7941,7 @@
           }
         },
         {
-          "row": 120,
+          "row": 119,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -7754,7 +7993,7 @@
           }
         },
         {
-          "row": 121,
+          "row": 120,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -7806,7 +8045,7 @@
           }
         },
         {
-          "row": 122,
+          "row": 121,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -7858,7 +8097,7 @@
           }
         },
         {
-          "row": 123,
+          "row": 122,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -7914,7 +8153,7 @@
     {
       "raceName": "ナイトメア",
       "source": "Ⅰ",
-      "excelRow": 125,
+      "excelRow": 124,
       "birthCount": 24,
       "baseExpressions": {
         "器用": "2d",
@@ -7950,9 +8189,53 @@
           "精神力": 21.8333
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 12,
+          "敏捷": 12,
+          "筋力": 10.5,
+          "生命力": 10.5,
+          "知力": 13,
+          "精神力": 13
+        },
+        "mean": {
+          "器用": 15.7083,
+          "敏捷": 15.7083,
+          "筋力": 14.9583,
+          "生命力": 14.9583,
+          "知力": 16.8333,
+          "精神力": 16.8333
+        },
+        "max": {
+          "器用": 18,
+          "敏捷": 18,
+          "筋力": 18.5,
+          "生命力": 18.5,
+          "知力": 20,
+          "精神力": 20
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 7,
+          "敏捷": 7,
+          "筋力": 8,
+          "生命力": 8,
+          "知力": 8,
+          "精神力": 8
+        },
+        "max": {
+          "器用": 23,
+          "敏捷": 23,
+          "筋力": 21,
+          "生命力": 21,
+          "知力": 25,
+          "精神力": 25
+        }
+      },
       "births": [
         {
-          "row": 126,
+          "row": 125,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "Ⅰ",
@@ -8004,7 +8287,7 @@
           }
         },
         {
-          "row": 127,
+          "row": 126,
           "birthName": "傭兵",
           "initialSkill": "ファイターorグラップラー",
           "source": "Ⅰ",
@@ -8056,7 +8339,7 @@
           }
         },
         {
-          "row": 128,
+          "row": 127,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー＆スカウト",
           "source": "Ⅰ",
@@ -8108,7 +8391,7 @@
           }
         },
         {
-          "row": 129,
+          "row": 128,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅰ",
@@ -8160,7 +8443,7 @@
           }
         },
         {
-          "row": 130,
+          "row": 129,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "Ⅰ",
@@ -8212,7 +8495,7 @@
           }
         },
         {
-          "row": 131,
+          "row": 130,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -8264,7 +8547,7 @@
           }
         },
         {
-          "row": 132,
+          "row": 131,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -8316,7 +8599,7 @@
           }
         },
         {
-          "row": 133,
+          "row": 132,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅱ",
@@ -8368,7 +8651,7 @@
           }
         },
         {
-          "row": 134,
+          "row": 133,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -8420,7 +8703,7 @@
           }
         },
         {
-          "row": 135,
+          "row": 134,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "Ⅱ",
@@ -8472,7 +8755,7 @@
           }
         },
         {
-          "row": 136,
+          "row": 135,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -8524,7 +8807,7 @@
           }
         },
         {
-          "row": 137,
+          "row": 136,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -8576,7 +8859,7 @@
           }
         },
         {
-          "row": 138,
+          "row": 137,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -8628,7 +8911,7 @@
           }
         },
         {
-          "row": 139,
+          "row": 138,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -8680,7 +8963,7 @@
           }
         },
         {
-          "row": 140,
+          "row": 139,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -8732,7 +9015,7 @@
           }
         },
         {
-          "row": 141,
+          "row": 140,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "BM",
@@ -8784,7 +9067,7 @@
           }
         },
         {
-          "row": 142,
+          "row": 141,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -8836,7 +9119,7 @@
           }
         },
         {
-          "row": 143,
+          "row": 142,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -8888,7 +9171,7 @@
           }
         },
         {
-          "row": 144,
+          "row": 143,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM",
@@ -8940,7 +9223,7 @@
           }
         },
         {
-          "row": 145,
+          "row": 144,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -8992,7 +9275,7 @@
           }
         },
         {
-          "row": 146,
+          "row": 145,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -9044,7 +9327,7 @@
           }
         },
         {
-          "row": 147,
+          "row": 146,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -9096,7 +9379,7 @@
           }
         },
         {
-          "row": 148,
+          "row": 147,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "AR",
@@ -9148,7 +9431,7 @@
           }
         },
         {
-          "row": 149,
+          "row": 148,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -9204,7 +9487,7 @@
     {
       "raceName": "リカント",
       "source": "Ⅰ",
-      "excelRow": 151,
+      "excelRow": 150,
       "birthCount": 20,
       "baseExpressions": {
         "器用": "1d",
@@ -9240,9 +9523,53 @@
           "精神力": 13.15
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 11.5,
+          "敏捷": 14.5,
+          "筋力": 12,
+          "生命力": 12,
+          "知力": 15.5,
+          "精神力": 9.5
+        },
+        "mean": {
+          "器用": 13.95,
+          "敏捷": 16.95,
+          "筋力": 14.4,
+          "生命力": 14.4,
+          "知力": 16.65,
+          "精神力": 10.65
+        },
+        "max": {
+          "器用": 16.5,
+          "敏捷": 19.5,
+          "筋力": 16,
+          "生命力": 16,
+          "知力": 18.5,
+          "精神力": 12.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 12,
+          "筋力": 7,
+          "生命力": 7,
+          "知力": 13,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 22,
+          "筋力": 21,
+          "生命力": 21,
+          "知力": 21,
+          "精神力": 15
+        }
+      },
       "births": [
         {
-          "row": 152,
+          "row": 151,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "Ⅰ",
@@ -9294,7 +9621,7 @@
           }
         },
         {
-          "row": 153,
+          "row": 152,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "Ⅰ",
@@ -9346,7 +9673,7 @@
           }
         },
         {
-          "row": 154,
+          "row": 153,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "Ⅰ",
@@ -9398,7 +9725,7 @@
           }
         },
         {
-          "row": 155,
+          "row": 154,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "Ⅰ",
@@ -9450,7 +9777,7 @@
           }
         },
         {
-          "row": 156,
+          "row": 155,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "Ⅰ",
@@ -9502,7 +9829,7 @@
           }
         },
         {
-          "row": 157,
+          "row": 156,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -9554,7 +9881,7 @@
           }
         },
         {
-          "row": 158,
+          "row": 157,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅱ",
@@ -9606,7 +9933,7 @@
           }
         },
         {
-          "row": 159,
+          "row": 158,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -9658,7 +9985,7 @@
           }
         },
         {
-          "row": 160,
+          "row": 159,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅱ",
@@ -9710,7 +10037,7 @@
           }
         },
         {
-          "row": 161,
+          "row": 160,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅱ",
@@ -9762,7 +10089,7 @@
           }
         },
         {
-          "row": 162,
+          "row": 161,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -9814,7 +10141,7 @@
           }
         },
         {
-          "row": 163,
+          "row": 162,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML／AR",
@@ -9866,7 +10193,7 @@
           }
         },
         {
-          "row": 164,
+          "row": 163,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -9918,7 +10245,7 @@
           }
         },
         {
-          "row": 165,
+          "row": 164,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM",
@@ -9970,7 +10297,7 @@
           }
         },
         {
-          "row": 166,
+          "row": 165,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -10022,7 +10349,7 @@
           }
         },
         {
-          "row": 167,
+          "row": 166,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "BM",
@@ -10074,7 +10401,7 @@
           }
         },
         {
-          "row": 168,
+          "row": 167,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -10126,7 +10453,7 @@
           }
         },
         {
-          "row": 169,
+          "row": 168,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "AR",
@@ -10178,7 +10505,7 @@
           }
         },
         {
-          "row": 170,
+          "row": 169,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -10230,7 +10557,7 @@
           }
         },
         {
-          "row": 171,
+          "row": 170,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -10286,7 +10613,7 @@
     {
       "raceName": "リルドラケン",
       "source": "Ⅱ",
-      "excelRow": 173,
+      "excelRow": 172,
       "birthCount": 23,
       "baseExpressions": {
         "器用": "1d",
@@ -10322,9 +10649,53 @@
           "精神力": 19.5217
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 6.5,
+          "敏捷": 10,
+          "筋力": 17,
+          "生命力": 23,
+          "知力": 8.5,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 8.7609,
+          "敏捷": 12.2609,
+          "筋力": 19.2174,
+          "生命力": 25.2174,
+          "知力": 11.0217,
+          "精神力": 14.5217
+        },
+        "max": {
+          "器用": 10.5,
+          "敏捷": 14,
+          "筋力": 21,
+          "生命力": 27,
+          "知力": 13.5,
+          "精神力": 17
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 4,
+          "敏捷": 5,
+          "筋力": 12,
+          "生命力": 18,
+          "知力": 6,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 13,
+          "敏捷": 19,
+          "筋力": 26,
+          "生命力": 32,
+          "知力": 16,
+          "精神力": 22
+        }
+      },
       "births": [
         {
-          "row": 174,
+          "row": 173,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -10376,7 +10747,7 @@
           }
         },
         {
-          "row": 175,
+          "row": 174,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "Ⅱ",
@@ -10428,7 +10799,7 @@
           }
         },
         {
-          "row": 176,
+          "row": 175,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "Ⅱ",
@@ -10480,7 +10851,7 @@
           }
         },
         {
-          "row": 177,
+          "row": 176,
           "birthName": "商人",
           "initialSkill": "セージ",
           "source": "Ⅱ",
@@ -10532,7 +10903,7 @@
           }
         },
         {
-          "row": 178,
+          "row": 177,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅱ",
@@ -10584,7 +10955,7 @@
           }
         },
         {
-          "row": 179,
+          "row": 178,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅱ",
@@ -10636,7 +11007,7 @@
           }
         },
         {
-          "row": 180,
+          "row": 179,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "Ⅱ",
@@ -10688,7 +11059,7 @@
           }
         },
         {
-          "row": 181,
+          "row": 180,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -10740,7 +11111,7 @@
           }
         },
         {
-          "row": 182,
+          "row": 181,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラーorコンジャラー",
           "source": "Ⅱ",
@@ -10792,7 +11163,7 @@
           }
         },
         {
-          "row": 183,
+          "row": 182,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -10844,7 +11215,7 @@
           }
         },
         {
-          "row": 184,
+          "row": 183,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -10896,7 +11267,7 @@
           }
         },
         {
-          "row": 185,
+          "row": 184,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML",
@@ -10948,7 +11319,7 @@
           }
         },
         {
-          "row": 186,
+          "row": 185,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -11000,7 +11371,7 @@
           }
         },
         {
-          "row": 187,
+          "row": 186,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -11052,7 +11423,7 @@
           }
         },
         {
-          "row": 188,
+          "row": 187,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -11104,7 +11475,7 @@
           }
         },
         {
-          "row": 189,
+          "row": 188,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM",
@@ -11156,7 +11527,7 @@
           }
         },
         {
-          "row": 190,
+          "row": 189,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -11208,7 +11579,7 @@
           }
         },
         {
-          "row": 191,
+          "row": 190,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM／AR",
@@ -11260,7 +11631,7 @@
           }
         },
         {
-          "row": 192,
+          "row": 191,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM",
@@ -11312,7 +11683,7 @@
           }
         },
         {
-          "row": 193,
+          "row": 192,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "AR",
@@ -11364,7 +11735,7 @@
           }
         },
         {
-          "row": 194,
+          "row": 193,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -11416,7 +11787,7 @@
           }
         },
         {
-          "row": 195,
+          "row": 194,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "AR",
@@ -11468,7 +11839,7 @@
           }
         },
         {
-          "row": 196,
+          "row": 195,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -11524,7 +11895,7 @@
     {
       "raceName": "グラスランナー",
       "source": "Ⅱ",
-      "excelRow": 198,
+      "excelRow": 197,
       "birthCount": 22,
       "baseExpressions": {
         "器用": "2d",
@@ -11560,9 +11931,53 @@
           "精神力": 29.6818
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 18,
+          "敏捷": 18,
+          "筋力": 3.5,
+          "生命力": 13,
+          "知力": 12.5,
+          "精神力": 22
+        },
+        "mean": {
+          "器用": 19.5,
+          "敏捷": 19.5,
+          "筋力": 4.3182,
+          "生命力": 13.8182,
+          "知力": 15.1818,
+          "精神力": 24.6818
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 22,
+          "筋力": 5.5,
+          "生命力": 15,
+          "知力": 17.5,
+          "精神力": 27
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 13,
+          "敏捷": 13,
+          "筋力": 1,
+          "生命力": 8,
+          "知力": 10,
+          "精神力": 17
+        },
+        "max": {
+          "器用": 27,
+          "敏捷": 27,
+          "筋力": 8,
+          "生命力": 20,
+          "知力": 20,
+          "精神力": 32
+        }
+      },
       "births": [
         {
-          "row": 199,
+          "row": 198,
           "birthName": "盗人",
           "initialSkill": "スカウト",
           "source": "Ⅱ",
@@ -11614,7 +12029,7 @@
           }
         },
         {
-          "row": 200,
+          "row": 199,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "Ⅱ",
@@ -11666,7 +12081,7 @@
           }
         },
         {
-          "row": 201,
+          "row": 200,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -11718,7 +12133,7 @@
           }
         },
         {
-          "row": 202,
+          "row": 201,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅱ",
@@ -11770,7 +12185,7 @@
           }
         },
         {
-          "row": 203,
+          "row": 202,
           "birthName": "趣味人",
           "initialSkill": "セージorバード",
           "source": "Ⅱ",
@@ -11822,7 +12237,7 @@
           }
         },
         {
-          "row": 204,
+          "row": 203,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅱ",
@@ -11874,7 +12289,7 @@
           }
         },
         {
-          "row": 205,
+          "row": 204,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "Ⅱ",
@@ -11926,7 +12341,7 @@
           }
         },
         {
-          "row": 206,
+          "row": 205,
           "birthName": "旅人",
           "initialSkill": "なし",
           "source": "Ⅱ",
@@ -11978,7 +12393,7 @@
           }
         },
         {
-          "row": 207,
+          "row": 206,
           "birthName": "密偵",
           "initialSkill": "フェンサー＆スカウト",
           "source": "Ⅱ",
@@ -12030,7 +12445,7 @@
           }
         },
         {
-          "row": 208,
+          "row": 207,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -12082,7 +12497,7 @@
           }
         },
         {
-          "row": 209,
+          "row": 208,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -12134,7 +12549,7 @@
           }
         },
         {
-          "row": 210,
+          "row": 209,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -12186,7 +12601,7 @@
           }
         },
         {
-          "row": 211,
+          "row": 210,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -12238,7 +12653,7 @@
           }
         },
         {
-          "row": 212,
+          "row": 211,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM",
@@ -12290,7 +12705,7 @@
           }
         },
         {
-          "row": 213,
+          "row": 212,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -12342,7 +12757,7 @@
           }
         },
         {
-          "row": 214,
+          "row": 213,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "BM",
@@ -12394,7 +12809,7 @@
           }
         },
         {
-          "row": 215,
+          "row": 214,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -12446,7 +12861,7 @@
           }
         },
         {
-          "row": 216,
+          "row": 215,
           "birthName": "薬師",
           "initialSkill": "セージ＆レンジャー",
           "source": "AR",
@@ -12498,7 +12913,7 @@
           }
         },
         {
-          "row": 217,
+          "row": 216,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -12550,7 +12965,7 @@
           }
         },
         {
-          "row": 218,
+          "row": 217,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -12602,7 +13017,7 @@
           }
         },
         {
-          "row": 219,
+          "row": 218,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -12654,7 +13069,7 @@
           }
         },
         {
-          "row": 220,
+          "row": 219,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "AR",
@@ -12710,7 +13125,7 @@
     {
       "raceName": "メリア",
       "source": "Ⅱ",
-      "excelRow": 222,
+      "excelRow": 221,
       "birthCount": 21,
       "baseExpressions": {
         "器用": "1d",
@@ -12746,9 +13161,53 @@
           "精神力": 19.5238
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 9.5,
+          "敏捷": 9.5,
+          "筋力": 8.5,
+          "生命力": 18,
+          "知力": 14.5,
+          "精神力": 14.5
+        },
+        "mean": {
+          "器用": 11.5476,
+          "敏捷": 11.5476,
+          "筋力": 10.9286,
+          "生命力": 20.4286,
+          "知力": 17.0238,
+          "精神力": 17.0238
+        },
+        "max": {
+          "器用": 13.5,
+          "敏捷": 13.5,
+          "筋力": 12.5,
+          "生命力": 22,
+          "知力": 19.5,
+          "精神力": 19.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 7,
+          "敏捷": 7,
+          "筋力": 6,
+          "生命力": 13,
+          "知力": 12,
+          "精神力": 12
+        },
+        "max": {
+          "器用": 16,
+          "敏捷": 16,
+          "筋力": 15,
+          "生命力": 27,
+          "知力": 22,
+          "精神力": 22
+        }
+      },
       "births": [
         {
-          "row": 223,
+          "row": 222,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "Ⅱ",
@@ -12800,7 +13259,7 @@
           }
         },
         {
-          "row": 224,
+          "row": 223,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅱ",
@@ -12852,7 +13311,7 @@
           }
         },
         {
-          "row": 225,
+          "row": 224,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅱ",
@@ -12904,7 +13363,7 @@
           }
         },
         {
-          "row": 226,
+          "row": 225,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "Ⅱ",
@@ -12956,7 +13415,7 @@
           }
         },
         {
-          "row": 227,
+          "row": 226,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "Ⅱ",
@@ -13008,7 +13467,7 @@
           }
         },
         {
-          "row": 228,
+          "row": 227,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅱ",
@@ -13060,7 +13519,7 @@
           }
         },
         {
-          "row": 229,
+          "row": 228,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "Ⅱ",
@@ -13112,7 +13571,7 @@
           }
         },
         {
-          "row": 230,
+          "row": 229,
           "birthName": "魔導師",
           "initialSkill": "ソーサラー＆コンジャラー",
           "source": "Ⅱ",
@@ -13164,7 +13623,7 @@
           }
         },
         {
-          "row": 231,
+          "row": 230,
           "birthName": "吟遊詩人",
           "initialSkill": "バード",
           "source": "Ⅱ",
@@ -13216,7 +13675,7 @@
           }
         },
         {
-          "row": 232,
+          "row": 231,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "Ⅱ",
@@ -13268,7 +13727,7 @@
           }
         },
         {
-          "row": 233,
+          "row": 232,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML／AR",
@@ -13320,7 +13779,7 @@
           }
         },
         {
-          "row": 234,
+          "row": 233,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML／AR",
@@ -13372,7 +13831,7 @@
           }
         },
         {
-          "row": 235,
+          "row": 234,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -13424,7 +13883,7 @@
           }
         },
         {
-          "row": 236,
+          "row": 235,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -13476,7 +13935,7 @@
           }
         },
         {
-          "row": 237,
+          "row": 236,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -13528,7 +13987,7 @@
           }
         },
         {
-          "row": 238,
+          "row": 237,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -13580,7 +14039,7 @@
           }
         },
         {
-          "row": 239,
+          "row": 238,
           "birthName": "踊り子／戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BM／AR",
@@ -13632,7 +14091,7 @@
           }
         },
         {
-          "row": 240,
+          "row": 239,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -13684,7 +14143,7 @@
           }
         },
         {
-          "row": 241,
+          "row": 240,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM",
@@ -13736,7 +14195,7 @@
           }
         },
         {
-          "row": 242,
+          "row": 241,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -13788,7 +14247,7 @@
           }
         },
         {
-          "row": 243,
+          "row": 242,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -13844,7 +14303,7 @@
     {
       "raceName": "ティエンス",
       "source": "Ⅲ",
-      "excelRow": 245,
+      "excelRow": 244,
       "birthCount": 22,
       "baseExpressions": {
         "器用": "2d",
@@ -13880,9 +14339,53 @@
           "精神力": 23.2273
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 13,
+          "敏捷": 13,
+          "筋力": 11.5,
+          "生命力": 14.5,
+          "知力": 12,
+          "精神力": 15
+        },
+        "mean": {
+          "器用": 15.5,
+          "敏捷": 15.5,
+          "筋力": 14.7727,
+          "生命力": 17.7727,
+          "知力": 15.2273,
+          "精神力": 18.2273
+        },
+        "max": {
+          "器用": 18,
+          "敏捷": 18,
+          "筋力": 16.5,
+          "生命力": 19.5,
+          "知力": 17,
+          "精神力": 20
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 8,
+          "敏捷": 8,
+          "筋力": 9,
+          "生命力": 12,
+          "知力": 7,
+          "精神力": 10
+        },
+        "max": {
+          "器用": 23,
+          "敏捷": 23,
+          "筋力": 19,
+          "生命力": 22,
+          "知力": 22,
+          "精神力": 25
+        }
+      },
       "births": [
         {
-          "row": 246,
+          "row": 245,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "Ⅲ",
@@ -13934,7 +14437,7 @@
           }
         },
         {
-          "row": 247,
+          "row": 246,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "Ⅲ",
@@ -13986,7 +14489,7 @@
           }
         },
         {
-          "row": 248,
+          "row": 247,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "Ⅲ",
@@ -14038,7 +14541,7 @@
           }
         },
         {
-          "row": 249,
+          "row": 248,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅲ",
@@ -14090,7 +14593,7 @@
           }
         },
         {
-          "row": 250,
+          "row": 249,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラー",
           "source": "Ⅲ",
@@ -14142,7 +14645,7 @@
           }
         },
         {
-          "row": 251,
+          "row": 250,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅲ",
@@ -14194,7 +14697,7 @@
           }
         },
         {
-          "row": 252,
+          "row": 251,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "Ⅲ",
@@ -14246,7 +14749,7 @@
           }
         },
         {
-          "row": 253,
+          "row": 252,
           "birthName": "魔法戦士",
           "initialSkill": "ファイター＆ソーサラー",
           "source": "Ⅲ",
@@ -14298,7 +14801,7 @@
           }
         },
         {
-          "row": 254,
+          "row": 253,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅲ",
@@ -14350,7 +14853,7 @@
           }
         },
         {
-          "row": 255,
+          "row": 254,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "Ⅲ",
@@ -14402,7 +14905,7 @@
           }
         },
         {
-          "row": 256,
+          "row": 255,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -14454,7 +14957,7 @@
           }
         },
         {
-          "row": 257,
+          "row": 256,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML／AR",
@@ -14506,7 +15009,7 @@
           }
         },
         {
-          "row": 258,
+          "row": 257,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "ML",
@@ -14558,7 +15061,7 @@
           }
         },
         {
-          "row": 259,
+          "row": 258,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -14610,7 +15113,7 @@
           }
         },
         {
-          "row": 260,
+          "row": 259,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -14662,7 +15165,7 @@
           }
         },
         {
-          "row": 261,
+          "row": 260,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -14714,7 +15217,7 @@
           }
         },
         {
-          "row": 262,
+          "row": 261,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -14766,7 +15269,7 @@
           }
         },
         {
-          "row": 263,
+          "row": 262,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM",
@@ -14818,7 +15321,7 @@
           }
         },
         {
-          "row": 264,
+          "row": 263,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -14870,7 +15373,7 @@
           }
         },
         {
-          "row": 265,
+          "row": 264,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -14922,7 +15425,7 @@
           }
         },
         {
-          "row": 266,
+          "row": 265,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -14974,7 +15477,7 @@
           }
         },
         {
-          "row": 267,
+          "row": 266,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -15030,7 +15533,7 @@
     {
       "raceName": "レプラカーン",
       "source": "Ⅲ",
-      "excelRow": 269,
+      "excelRow": 268,
       "birthCount": 22,
       "baseExpressions": {
         "器用": "2d",
@@ -15066,9 +15569,53 @@
           "精神力": 18.3182
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 17,
+          "敏捷": 13.5,
+          "筋力": 10,
+          "生命力": 10,
+          "知力": 11,
+          "精神力": 11
+        },
+        "mean": {
+          "器用": 19.0909,
+          "敏捷": 15.5909,
+          "筋力": 11.5909,
+          "生命力": 11.5909,
+          "知力": 13.3182,
+          "精神力": 13.3182
+        },
+        "max": {
+          "器用": 21,
+          "敏捷": 17.5,
+          "筋力": 13,
+          "生命力": 13,
+          "知力": 16,
+          "精神力": 16
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 12,
+          "敏捷": 11,
+          "筋力": 5,
+          "生命力": 5,
+          "知力": 6,
+          "精神力": 6
+        },
+        "max": {
+          "器用": 26,
+          "敏捷": 20,
+          "筋力": 18,
+          "生命力": 18,
+          "知力": 21,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 270,
+          "row": 269,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "Ⅲ",
@@ -15120,7 +15667,7 @@
           }
         },
         {
-          "row": 271,
+          "row": 270,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "Ⅲ",
@@ -15172,7 +15719,7 @@
           }
         },
         {
-          "row": 272,
+          "row": 271,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "Ⅲ",
@@ -15224,7 +15771,7 @@
           }
         },
         {
-          "row": 273,
+          "row": 272,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "Ⅲ",
@@ -15276,7 +15823,7 @@
           }
         },
         {
-          "row": 274,
+          "row": 273,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "Ⅲ",
@@ -15328,7 +15875,7 @@
           }
         },
         {
-          "row": 275,
+          "row": 274,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "Ⅲ",
@@ -15380,7 +15927,7 @@
           }
         },
         {
-          "row": 276,
+          "row": 275,
           "birthName": "趣味人",
           "initialSkill": "セージ＆バード",
           "source": "Ⅲ",
@@ -15432,7 +15979,7 @@
           }
         },
         {
-          "row": 277,
+          "row": 276,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "Ⅲ",
@@ -15484,7 +16031,7 @@
           }
         },
         {
-          "row": 278,
+          "row": 277,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "Ⅲ",
@@ -15536,7 +16083,7 @@
           }
         },
         {
-          "row": 279,
+          "row": 278,
           "birthName": "魔導師",
           "initialSkill": "ソーサラーorコンジャラー",
           "source": "Ⅲ",
@@ -15588,7 +16135,7 @@
           }
         },
         {
-          "row": 280,
+          "row": 279,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "ML",
@@ -15640,7 +16187,7 @@
           }
         },
         {
-          "row": 281,
+          "row": 280,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "ML／AR",
@@ -15692,7 +16239,7 @@
           }
         },
         {
-          "row": 282,
+          "row": 281,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "ML",
@@ -15744,7 +16291,7 @@
           }
         },
         {
-          "row": 283,
+          "row": 282,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BM",
@@ -15796,7 +16343,7 @@
           }
         },
         {
-          "row": 284,
+          "row": 283,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -15848,7 +16395,7 @@
           }
         },
         {
-          "row": 285,
+          "row": 284,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -15900,7 +16447,7 @@
           }
         },
         {
-          "row": 286,
+          "row": 285,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BM",
@@ -15952,7 +16499,7 @@
           }
         },
         {
-          "row": 287,
+          "row": 286,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BM",
@@ -16004,7 +16551,7 @@
           }
         },
         {
-          "row": 288,
+          "row": 287,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -16056,7 +16603,7 @@
           }
         },
         {
-          "row": 289,
+          "row": 288,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -16108,7 +16655,7 @@
           }
         },
         {
-          "row": 290,
+          "row": 289,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -16160,7 +16707,7 @@
           }
         },
         {
-          "row": 291,
+          "row": 290,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -16216,7 +16763,7 @@
     {
       "raceName": "アルヴ",
       "source": "OP",
-      "excelRow": 293,
+      "excelRow": 292,
       "birthCount": 13,
       "baseExpressions": {
         "器用": "1d",
@@ -16252,9 +16799,53 @@
           "精神力": 14.8462
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 12.5,
+          "敏捷": 15.5,
+          "筋力": 14,
+          "生命力": 11,
+          "知力": 16.5,
+          "精神力": 10.5
+        },
+        "mean": {
+          "器用": 14.1154,
+          "敏捷": 17.1154,
+          "筋力": 15.5385,
+          "生命力": 12.5385,
+          "知力": 18.3462,
+          "精神力": 12.3462
+        },
+        "max": {
+          "器用": 16.5,
+          "敏捷": 19.5,
+          "筋力": 17,
+          "生命力": 14,
+          "知力": 21.5,
+          "精神力": 15.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 10,
+          "敏捷": 13,
+          "筋力": 9,
+          "生命力": 6,
+          "知力": 14,
+          "精神力": 8
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 22,
+          "筋力": 22,
+          "生命力": 19,
+          "知力": 24,
+          "精神力": 18
+        }
+      },
       "births": [
         {
-          "row": 294,
+          "row": 293,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "OP",
@@ -16306,7 +16897,7 @@
           }
         },
         {
-          "row": 295,
+          "row": 294,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "OP",
@@ -16358,7 +16949,7 @@
           }
         },
         {
-          "row": 296,
+          "row": 295,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラー",
           "source": "OP",
@@ -16410,7 +17001,7 @@
           }
         },
         {
-          "row": 297,
+          "row": 296,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "OP",
@@ -16462,7 +17053,7 @@
           }
         },
         {
-          "row": 298,
+          "row": 297,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "OP",
@@ -16514,7 +17105,7 @@
           }
         },
         {
-          "row": 299,
+          "row": 298,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "OP",
@@ -16566,7 +17157,7 @@
           }
         },
         {
-          "row": 300,
+          "row": 299,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "OP",
@@ -16618,7 +17209,7 @@
           }
         },
         {
-          "row": 301,
+          "row": 300,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "OP",
@@ -16670,7 +17261,7 @@
           }
         },
         {
-          "row": 302,
+          "row": 301,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "OP",
@@ -16722,7 +17313,7 @@
           }
         },
         {
-          "row": 303,
+          "row": 302,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "OP",
@@ -16774,7 +17365,7 @@
           }
         },
         {
-          "row": 304,
+          "row": 303,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -16826,7 +17417,7 @@
           }
         },
         {
-          "row": 305,
+          "row": 304,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -16878,7 +17469,7 @@
           }
         },
         {
-          "row": 306,
+          "row": 305,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -16934,7 +17525,7 @@
     {
       "raceName": "ウィークリング（ガルーダ）",
       "source": "OP",
-      "excelRow": 308,
+      "excelRow": 307,
       "birthCount": 13,
       "baseExpressions": {
         "器用": "2d",
@@ -16970,9 +17561,53 @@
           "精神力": 18.6154
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 17,
+          "筋力": 14,
+          "生命力": 14,
+          "知力": 12,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 15.3077,
+          "敏捷": 18.3077,
+          "筋力": 15.0769,
+          "生命力": 15.0769,
+          "知力": 13.6154,
+          "精神力": 13.6154
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 20,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 16,
+          "精神力": 16
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 12,
+          "筋力": 9,
+          "生命力": 9,
+          "知力": 7,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 25,
+          "筋力": 22,
+          "生命力": 22,
+          "知力": 21,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 312,
+          "row": 311,
           "birthName": "斥候",
           "initialSkill": "スカウト",
           "source": "OP",
@@ -17024,7 +17659,7 @@
           }
         },
         {
-          "row": 313,
+          "row": 312,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "OP",
@@ -17076,7 +17711,7 @@
           }
         },
         {
-          "row": 314,
+          "row": 313,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "OP",
@@ -17128,7 +17763,7 @@
           }
         },
         {
-          "row": 315,
+          "row": 314,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "OP",
@@ -17180,7 +17815,7 @@
           }
         },
         {
-          "row": 316,
+          "row": 315,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラー",
           "source": "OP",
@@ -17232,7 +17867,7 @@
           }
         },
         {
-          "row": 317,
+          "row": 316,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "OP",
@@ -17284,7 +17919,7 @@
           }
         },
         {
-          "row": 318,
+          "row": 317,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "OP",
@@ -17336,7 +17971,7 @@
           }
         },
         {
-          "row": 319,
+          "row": 318,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "OP",
@@ -17388,7 +18023,7 @@
           }
         },
         {
-          "row": 320,
+          "row": 319,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "OP",
@@ -17440,7 +18075,7 @@
           }
         },
         {
-          "row": 321,
+          "row": 320,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "OP",
@@ -17492,7 +18127,7 @@
           }
         },
         {
-          "row": 322,
+          "row": 321,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -17544,7 +18179,7 @@
           }
         },
         {
-          "row": 323,
+          "row": 322,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -17596,7 +18231,7 @@
           }
         },
         {
-          "row": 324,
+          "row": 323,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -17652,7 +18287,7 @@
     {
       "raceName": "ウィークリング（タンノズ）",
       "source": "OP",
-      "excelRow": 309,
+      "excelRow": 308,
       "birthCount": 13,
       "baseExpressions": {
         "器用": "2d",
@@ -17688,9 +18323,53 @@
           "精神力": 21.6154
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 14,
+          "筋力": 14,
+          "生命力": 14,
+          "知力": 12,
+          "精神力": 15
+        },
+        "mean": {
+          "器用": 15.3077,
+          "敏捷": 15.3077,
+          "筋力": 15.0769,
+          "生命力": 15.0769,
+          "知力": 13.6154,
+          "精神力": 16.6154
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 17,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 16,
+          "精神力": 19
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 9,
+          "筋力": 9,
+          "生命力": 9,
+          "知力": 7,
+          "精神力": 10
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 22,
+          "筋力": 22,
+          "生命力": 22,
+          "知力": 21,
+          "精神力": 24
+        }
+      },
       "births": [
         {
-          "row": 312,
+          "row": 311,
           "birthName": "斥候",
           "initialSkill": "スカウト",
           "source": "OP",
@@ -17742,7 +18421,7 @@
           }
         },
         {
-          "row": 313,
+          "row": 312,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "OP",
@@ -17794,7 +18473,7 @@
           }
         },
         {
-          "row": 314,
+          "row": 313,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "OP",
@@ -17846,7 +18525,7 @@
           }
         },
         {
-          "row": 315,
+          "row": 314,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "OP",
@@ -17898,7 +18577,7 @@
           }
         },
         {
-          "row": 316,
+          "row": 315,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラー",
           "source": "OP",
@@ -17950,7 +18629,7 @@
           }
         },
         {
-          "row": 317,
+          "row": 316,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "OP",
@@ -18002,7 +18681,7 @@
           }
         },
         {
-          "row": 318,
+          "row": 317,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "OP",
@@ -18054,7 +18733,7 @@
           }
         },
         {
-          "row": 319,
+          "row": 318,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "OP",
@@ -18106,7 +18785,7 @@
           }
         },
         {
-          "row": 320,
+          "row": 319,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "OP",
@@ -18158,7 +18837,7 @@
           }
         },
         {
-          "row": 321,
+          "row": 320,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "OP",
@@ -18210,7 +18889,7 @@
           }
         },
         {
-          "row": 322,
+          "row": 321,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -18262,7 +18941,7 @@
           }
         },
         {
-          "row": 323,
+          "row": 322,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -18314,7 +18993,7 @@
           }
         },
         {
-          "row": 324,
+          "row": 323,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -18370,7 +19049,7 @@
     {
       "raceName": "ウィークリング（バジリスク）",
       "source": "OP",
-      "excelRow": 310,
+      "excelRow": 309,
       "birthCount": 13,
       "baseExpressions": {
         "器用": "2d",
@@ -18406,9 +19085,53 @@
           "精神力": 18.6154
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 14,
+          "筋力": 14,
+          "生命力": 14,
+          "知力": 15,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 15.3077,
+          "敏捷": 15.3077,
+          "筋力": 15.0769,
+          "生命力": 15.0769,
+          "知力": 16.6154,
+          "精神力": 13.6154
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 17,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 19,
+          "精神力": 16
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 9,
+          "筋力": 9,
+          "生命力": 9,
+          "知力": 10,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 22,
+          "筋力": 22,
+          "生命力": 22,
+          "知力": 24,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 312,
+          "row": 311,
           "birthName": "斥候",
           "initialSkill": "スカウト",
           "source": "OP",
@@ -18460,7 +19183,7 @@
           }
         },
         {
-          "row": 313,
+          "row": 312,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "OP",
@@ -18512,7 +19235,7 @@
           }
         },
         {
-          "row": 314,
+          "row": 313,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "OP",
@@ -18564,7 +19287,7 @@
           }
         },
         {
-          "row": 315,
+          "row": 314,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "OP",
@@ -18616,7 +19339,7 @@
           }
         },
         {
-          "row": 316,
+          "row": 315,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラー",
           "source": "OP",
@@ -18668,7 +19391,7 @@
           }
         },
         {
-          "row": 317,
+          "row": 316,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "OP",
@@ -18720,7 +19443,7 @@
           }
         },
         {
-          "row": 318,
+          "row": 317,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "OP",
@@ -18772,7 +19495,7 @@
           }
         },
         {
-          "row": 319,
+          "row": 318,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "OP",
@@ -18824,7 +19547,7 @@
           }
         },
         {
-          "row": 320,
+          "row": 319,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "OP",
@@ -18876,7 +19599,7 @@
           }
         },
         {
-          "row": 321,
+          "row": 320,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "OP",
@@ -18928,7 +19651,7 @@
           }
         },
         {
-          "row": 322,
+          "row": 321,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -18980,7 +19703,7 @@
           }
         },
         {
-          "row": 323,
+          "row": 322,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -19032,7 +19755,7 @@
           }
         },
         {
-          "row": 324,
+          "row": 323,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -19088,7 +19811,7 @@
     {
       "raceName": "ウィークリング（ミノタウロス）",
       "source": "OP",
-      "excelRow": 311,
+      "excelRow": 310,
       "birthCount": 13,
       "baseExpressions": {
         "器用": "2d",
@@ -19124,9 +19847,53 @@
           "精神力": 18.6154
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 14,
+          "筋力": 17,
+          "生命力": 14,
+          "知力": 12,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 15.3077,
+          "敏捷": 15.3077,
+          "筋力": 18.0769,
+          "生命力": 15.0769,
+          "知力": 13.6154,
+          "精神力": 13.6154
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 17,
+          "筋力": 20,
+          "生命力": 17,
+          "知力": 16,
+          "精神力": 16
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 9,
+          "筋力": 12,
+          "生命力": 9,
+          "知力": 7,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 22,
+          "筋力": 25,
+          "生命力": 22,
+          "知力": 21,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 312,
+          "row": 311,
           "birthName": "斥候",
           "initialSkill": "スカウト",
           "source": "OP",
@@ -19178,7 +19945,7 @@
           }
         },
         {
-          "row": 313,
+          "row": 312,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "OP",
@@ -19230,7 +19997,7 @@
           }
         },
         {
-          "row": 314,
+          "row": 313,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "OP",
@@ -19282,7 +20049,7 @@
           }
         },
         {
-          "row": 315,
+          "row": 314,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "OP",
@@ -19334,7 +20101,7 @@
           }
         },
         {
-          "row": 316,
+          "row": 315,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラー",
           "source": "OP",
@@ -19386,7 +20153,7 @@
           }
         },
         {
-          "row": 317,
+          "row": 316,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "OP",
@@ -19438,7 +20205,7 @@
           }
         },
         {
-          "row": 318,
+          "row": 317,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "OP",
@@ -19490,7 +20257,7 @@
           }
         },
         {
-          "row": 319,
+          "row": 318,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "OP",
@@ -19542,7 +20309,7 @@
           }
         },
         {
-          "row": 320,
+          "row": 319,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "OP",
@@ -19594,7 +20361,7 @@
           }
         },
         {
-          "row": 321,
+          "row": 320,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "OP",
@@ -19646,7 +20413,7 @@
           }
         },
         {
-          "row": 322,
+          "row": 321,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -19698,7 +20465,7 @@
           }
         },
         {
-          "row": 323,
+          "row": 322,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -19750,7 +20517,7 @@
           }
         },
         {
-          "row": 324,
+          "row": 323,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -19806,7 +20573,7 @@
     {
       "raceName": "シャドウ",
       "source": "OP",
-      "excelRow": 326,
+      "excelRow": 325,
       "birthCount": 13,
       "baseExpressions": {
         "器用": "1d",
@@ -19842,9 +20609,53 @@
           "精神力": 16.6154
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 16.5,
+          "敏捷": 16.5,
+          "筋力": 12,
+          "生命力": 12,
+          "知力": 10,
+          "精神力": 10
+        },
+        "mean": {
+          "器用": 18.9615,
+          "敏捷": 18.9615,
+          "筋力": 13.9231,
+          "生命力": 13.9231,
+          "知力": 11.6154,
+          "精神力": 11.6154
+        },
+        "max": {
+          "器用": 21.5,
+          "敏捷": 21.5,
+          "筋力": 16,
+          "生命力": 16,
+          "知力": 14,
+          "精神力": 14
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 14,
+          "筋力": 7,
+          "生命力": 7,
+          "知力": 5,
+          "精神力": 5
+        },
+        "max": {
+          "器用": 24,
+          "敏捷": 24,
+          "筋力": 21,
+          "生命力": 21,
+          "知力": 19,
+          "精神力": 19
+        }
+      },
       "births": [
         {
-          "row": 327,
+          "row": 326,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "OP",
@@ -19896,7 +20707,7 @@
           }
         },
         {
-          "row": 328,
+          "row": 327,
           "birthName": "剣士",
           "initialSkill": "フェンサー",
           "source": "OP",
@@ -19948,7 +20759,7 @@
           }
         },
         {
-          "row": 329,
+          "row": 328,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "OP",
@@ -20000,7 +20811,7 @@
           }
         },
         {
-          "row": 330,
+          "row": 329,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "OP",
@@ -20052,7 +20863,7 @@
           }
         },
         {
-          "row": 331,
+          "row": 330,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "OP",
@@ -20104,7 +20915,7 @@
           }
         },
         {
-          "row": 332,
+          "row": 331,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "OP",
@@ -20156,7 +20967,7 @@
           }
         },
         {
-          "row": 333,
+          "row": 332,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "OP",
@@ -20208,7 +21019,7 @@
           }
         },
         {
-          "row": 334,
+          "row": 333,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "OP",
@@ -20260,7 +21071,7 @@
           }
         },
         {
-          "row": 335,
+          "row": 334,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "OP",
@@ -20312,7 +21123,7 @@
           }
         },
         {
-          "row": 336,
+          "row": 335,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "OP",
@@ -20364,7 +21175,7 @@
           }
         },
         {
-          "row": 337,
+          "row": 336,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -20416,7 +21227,7 @@
           }
         },
         {
-          "row": 338,
+          "row": 337,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -20468,7 +21279,7 @@
           }
         },
         {
-          "row": 339,
+          "row": 338,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -20524,7 +21335,7 @@
     {
       "raceName": "ソレイユ",
       "source": "OP",
-      "excelRow": 341,
+      "excelRow": 340,
       "birthCount": 13,
       "baseExpressions": {
         "器用": "1d",
@@ -20560,9 +21371,53 @@
           "精神力": 14.5385
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 12.5,
+          "敏捷": 16,
+          "筋力": 20.5,
+          "生命力": 18,
+          "知力": 3.5,
+          "精神力": 7
+        },
+        "mean": {
+          "器用": 14.3462,
+          "敏捷": 17.8462,
+          "筋力": 22.1154,
+          "生命力": 19.6154,
+          "知力": 6.0385,
+          "精神力": 9.5385
+        },
+        "max": {
+          "器用": 15.5,
+          "敏捷": 19,
+          "筋力": 24.5,
+          "生命力": 22,
+          "知力": 8.5,
+          "精神力": 12
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 10,
+          "敏捷": 11,
+          "筋力": 18,
+          "生命力": 13,
+          "知力": 1,
+          "精神力": 2
+        },
+        "max": {
+          "器用": 18,
+          "敏捷": 24,
+          "筋力": 27,
+          "生命力": 27,
+          "知力": 11,
+          "精神力": 17
+        }
+      },
       "births": [
         {
-          "row": 342,
+          "row": 341,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "OP",
@@ -20614,7 +21469,7 @@
           }
         },
         {
-          "row": 343,
+          "row": 342,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "OP",
@@ -20666,7 +21521,7 @@
           }
         },
         {
-          "row": 344,
+          "row": 343,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "OP",
@@ -20718,7 +21573,7 @@
           }
         },
         {
-          "row": 345,
+          "row": 344,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "OP",
@@ -20770,7 +21625,7 @@
           }
         },
         {
-          "row": 346,
+          "row": 345,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "OP",
@@ -20822,7 +21677,7 @@
           }
         },
         {
-          "row": 347,
+          "row": 346,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "OP",
@@ -20874,7 +21729,7 @@
           }
         },
         {
-          "row": 348,
+          "row": 347,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "OP",
@@ -20926,7 +21781,7 @@
           }
         },
         {
-          "row": 349,
+          "row": 348,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "OP",
@@ -20978,7 +21833,7 @@
           }
         },
         {
-          "row": 350,
+          "row": 349,
           "birthName": "趣味人",
           "initialSkill": "バード",
           "source": "OP",
@@ -21030,7 +21885,7 @@
           }
         },
         {
-          "row": 351,
+          "row": 350,
           "birthName": "斥候",
           "initialSkill": "スカウト",
           "source": "OP",
@@ -21082,7 +21937,7 @@
           }
         },
         {
-          "row": 352,
+          "row": 351,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BM",
@@ -21134,7 +21989,7 @@
           }
         },
         {
-          "row": 353,
+          "row": 352,
           "birthName": "踊り子",
           "initialSkill": "バトルダンサー",
           "source": "BM",
@@ -21186,7 +22041,7 @@
           }
         },
         {
-          "row": 354,
+          "row": 353,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BM",
@@ -21242,7 +22097,7 @@
     {
       "raceName": "スプリガン",
       "source": "AR",
-      "excelRow": 356,
+      "excelRow": 355,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "1d",
@@ -21278,9 +22133,53 @@
           "精神力": 12.8
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 12.5,
+          "敏捷": 16,
+          "筋力": 12.5,
+          "生命力": 12.5,
+          "知力": 12,
+          "精神力": 8.5
+        },
+        "mean": {
+          "器用": 14.5,
+          "敏捷": 18,
+          "筋力": 13.7,
+          "生命力": 13.7,
+          "知力": 13.8,
+          "精神力": 10.3
+        },
+        "max": {
+          "器用": 16.5,
+          "敏捷": 20,
+          "筋力": 15.5,
+          "生命力": 15.5,
+          "知力": 16,
+          "精神力": 12.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 10,
+          "敏捷": 11,
+          "筋力": 10,
+          "生命力": 10,
+          "知力": 7,
+          "精神力": 6
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 25,
+          "筋力": 18,
+          "生命力": 18,
+          "知力": 21,
+          "精神力": 15
+        }
+      },
       "births": [
         {
-          "row": 357,
+          "row": 356,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "AR",
@@ -21332,7 +22231,7 @@
           }
         },
         {
-          "row": 358,
+          "row": 357,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "AR",
@@ -21384,7 +22283,7 @@
           }
         },
         {
-          "row": 359,
+          "row": 358,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "AR",
@@ -21436,7 +22335,7 @@
           }
         },
         {
-          "row": 360,
+          "row": 359,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "AR",
@@ -21488,7 +22387,7 @@
           }
         },
         {
-          "row": 361,
+          "row": 360,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "AR",
@@ -21540,7 +22439,7 @@
           }
         },
         {
-          "row": 362,
+          "row": 361,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "AR",
@@ -21592,7 +22491,7 @@
           }
         },
         {
-          "row": 363,
+          "row": 362,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "AR",
@@ -21644,7 +22543,7 @@
           }
         },
         {
-          "row": 364,
+          "row": 363,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -21696,7 +22595,7 @@
           }
         },
         {
-          "row": 365,
+          "row": 364,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "AR",
@@ -21748,7 +22647,7 @@
           }
         },
         {
-          "row": 366,
+          "row": 365,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "AR",
@@ -21804,7 +22703,7 @@
     {
       "raceName": "アビスボーン",
       "source": "AR",
-      "excelRow": 368,
+      "excelRow": 367,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -21840,9 +22739,53 @@
           "精神力": 16.3
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 13,
+          "敏捷": 9.5,
+          "筋力": 15.5,
+          "生命力": 13,
+          "知力": 15,
+          "精神力": 11.5
+        },
+        "mean": {
+          "器用": 15.4,
+          "敏捷": 11.9,
+          "筋力": 17.8,
+          "生命力": 15.3,
+          "知力": 17.3,
+          "精神力": 13.8
+        },
+        "max": {
+          "器用": 18,
+          "敏捷": 14.5,
+          "筋力": 20.5,
+          "生命力": 18,
+          "知力": 20,
+          "精神力": 16.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 8,
+          "敏捷": 7,
+          "筋力": 13,
+          "生命力": 8,
+          "知力": 10,
+          "精神力": 9
+        },
+        "max": {
+          "器用": 23,
+          "敏捷": 17,
+          "筋力": 23,
+          "生命力": 23,
+          "知力": 25,
+          "精神力": 19
+        }
+      },
       "births": [
         {
-          "row": 369,
+          "row": 368,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "AR",
@@ -21894,7 +22837,7 @@
           }
         },
         {
-          "row": 370,
+          "row": 369,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "AR",
@@ -21946,7 +22889,7 @@
           }
         },
         {
-          "row": 371,
+          "row": 370,
           "birthName": "傭兵",
           "initialSkill": "ファイターorグラップラー",
           "source": "AR",
@@ -21998,7 +22941,7 @@
           }
         },
         {
-          "row": 372,
+          "row": 371,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラーorコンジャラー",
           "source": "AR",
@@ -22050,7 +22993,7 @@
           }
         },
         {
-          "row": 373,
+          "row": 372,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "AR",
@@ -22102,7 +23045,7 @@
           }
         },
         {
-          "row": 374,
+          "row": 373,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "AR",
@@ -22154,7 +23097,7 @@
           }
         },
         {
-          "row": 375,
+          "row": 374,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "AR",
@@ -22206,7 +23149,7 @@
           }
         },
         {
-          "row": 376,
+          "row": 375,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -22258,7 +23201,7 @@
           }
         },
         {
-          "row": 377,
+          "row": 376,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "AR",
@@ -22310,7 +23253,7 @@
           }
         },
         {
-          "row": 378,
+          "row": 377,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -22366,7 +23309,7 @@
     {
       "raceName": "ハイマン",
       "source": "AR",
-      "excelRow": 380,
+      "excelRow": 379,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -22402,9 +23345,53 @@
           "精神力": 19.5
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 12,
+          "敏捷": 8.5,
+          "筋力": 12,
+          "生命力": 8.5,
+          "知力": 14.5,
+          "精神力": 14.5
+        },
+        "mean": {
+          "器用": 13.9,
+          "敏捷": 10.4,
+          "筋力": 13.6,
+          "生命力": 10.1,
+          "知力": 17,
+          "精神力": 17
+        },
+        "max": {
+          "器用": 16,
+          "敏捷": 12.5,
+          "筋力": 15,
+          "生命力": 11.5,
+          "知力": 18.5,
+          "精神力": 18.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 7,
+          "敏捷": 6,
+          "筋力": 7,
+          "生命力": 6,
+          "知力": 12,
+          "精神力": 12
+        },
+        "max": {
+          "器用": 21,
+          "敏捷": 15,
+          "筋力": 20,
+          "生命力": 14,
+          "知力": 21,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 381,
+          "row": 380,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "AR",
@@ -22456,7 +23443,7 @@
           }
         },
         {
-          "row": 382,
+          "row": 381,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "AR",
@@ -22508,7 +23495,7 @@
           }
         },
         {
-          "row": 383,
+          "row": 382,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "AR",
@@ -22560,7 +23547,7 @@
           }
         },
         {
-          "row": 384,
+          "row": 383,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "AR",
@@ -22612,7 +23599,7 @@
           }
         },
         {
-          "row": 385,
+          "row": 384,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "AR",
@@ -22664,7 +23651,7 @@
           }
         },
         {
-          "row": 386,
+          "row": 385,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -22716,7 +23703,7 @@
           }
         },
         {
-          "row": 387,
+          "row": 386,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "AR",
@@ -22768,7 +23755,7 @@
           }
         },
         {
-          "row": 388,
+          "row": 387,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "AR",
@@ -22820,7 +23807,7 @@
           }
         },
         {
-          "row": 389,
+          "row": 388,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -22872,7 +23859,7 @@
           }
         },
         {
-          "row": 390,
+          "row": 389,
           "birthName": "吟遊詩人",
           "initialSkill": "セージ＆バード",
           "source": "AR",
@@ -22928,7 +23915,7 @@
     {
       "raceName": "フロウライト",
       "source": "AR",
-      "excelRow": 392,
+      "excelRow": 391,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -22964,9 +23951,53 @@
           "精神力": 29.5
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 12,
+          "敏捷": 12,
+          "筋力": 13,
+          "生命力": 7,
+          "知力": 12.5,
+          "精神力": 22
+        },
+        "mean": {
+          "器用": 13.1,
+          "敏捷": 13.1,
+          "筋力": 14.4,
+          "生命力": 8.4,
+          "知力": 15,
+          "精神力": 24.5
+        },
+        "max": {
+          "器用": 14,
+          "敏捷": 14,
+          "筋力": 16,
+          "生命力": 10,
+          "知力": 16.5,
+          "精神力": 26
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 7,
+          "敏捷": 7,
+          "筋力": 8,
+          "生命力": 2,
+          "知力": 10,
+          "精神力": 17
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 19,
+          "筋力": 21,
+          "生命力": 15,
+          "知力": 19,
+          "精神力": 31
+        }
+      },
       "births": [
         {
-          "row": 393,
+          "row": 392,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "AR",
@@ -23018,7 +24049,7 @@
           }
         },
         {
-          "row": 394,
+          "row": 393,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "AR",
@@ -23070,7 +24101,7 @@
           }
         },
         {
-          "row": 395,
+          "row": 394,
           "birthName": "魔導師",
           "initialSkill": "ソーサラー＆コンジャラー",
           "source": "AR",
@@ -23122,7 +24153,7 @@
           }
         },
         {
-          "row": 396,
+          "row": 395,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "AR",
@@ -23174,7 +24205,7 @@
           }
         },
         {
-          "row": 397,
+          "row": 396,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "AR",
@@ -23226,7 +24257,7 @@
           }
         },
         {
-          "row": 398,
+          "row": 397,
           "birthName": "魔法戦士",
           "initialSkill": "ファイター＆ソーサラー",
           "source": "AR",
@@ -23278,7 +24309,7 @@
           }
         },
         {
-          "row": 399,
+          "row": 398,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "AR",
@@ -23330,7 +24361,7 @@
           }
         },
         {
-          "row": 400,
+          "row": 399,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "AR",
@@ -23382,7 +24413,7 @@
           }
         },
         {
-          "row": 401,
+          "row": 400,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "AR",
@@ -23434,7 +24465,7 @@
           }
         },
         {
-          "row": 402,
+          "row": 401,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -23490,7 +24521,7 @@
     {
       "raceName": "ダークドワーフ",
       "source": "AR",
-      "excelRow": 404,
+      "excelRow": 403,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d+6",
@@ -23526,9 +24557,53 @@
           "精神力": 25.9
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 19,
+          "敏捷": 9.5,
+          "筋力": 15,
+          "生命力": 11.5,
+          "知力": 9.5,
+          "精神力": 19
+        },
+        "mean": {
+          "器用": 21,
+          "敏捷": 11.5,
+          "筋力": 17.1,
+          "生命力": 13.6,
+          "知力": 11.4,
+          "精神力": 20.9
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 12.5,
+          "筋力": 19,
+          "生命力": 15.5,
+          "知力": 13.5,
+          "精神力": 23
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 7,
+          "筋力": 10,
+          "生命力": 9,
+          "知力": 7,
+          "精神力": 14
+        },
+        "max": {
+          "器用": 27,
+          "敏捷": 15,
+          "筋力": 24,
+          "生命力": 18,
+          "知力": 16,
+          "精神力": 28
+        }
+      },
       "births": [
         {
-          "row": 405,
+          "row": 404,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "AR",
@@ -23580,7 +24655,7 @@
           }
         },
         {
-          "row": 406,
+          "row": 405,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "AR",
@@ -23632,7 +24707,7 @@
           }
         },
         {
-          "row": 407,
+          "row": 406,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "AR",
@@ -23684,7 +24759,7 @@
           }
         },
         {
-          "row": 408,
+          "row": 407,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "AR",
@@ -23736,7 +24811,7 @@
           }
         },
         {
-          "row": 409,
+          "row": 408,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "AR",
@@ -23788,7 +24863,7 @@
           }
         },
         {
-          "row": 410,
+          "row": 409,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "AR",
@@ -23840,7 +24915,7 @@
           }
         },
         {
-          "row": 411,
+          "row": 410,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "AR",
@@ -23892,7 +24967,7 @@
           }
         },
         {
-          "row": 412,
+          "row": 411,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "AR",
@@ -23944,7 +25019,7 @@
           }
         },
         {
-          "row": 413,
+          "row": 412,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "AR",
@@ -23996,7 +25071,7 @@
           }
         },
         {
-          "row": 414,
+          "row": 413,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "AR",
@@ -24052,7 +25127,7 @@
     {
       "raceName": "ディアボロ",
       "source": "BR",
-      "excelRow": 416,
+      "excelRow": 415,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -24088,9 +25163,53 @@
           "精神力": 20.5
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 15,
+          "敏捷": 15,
+          "筋力": 20,
+          "生命力": 14,
+          "知力": 9.5,
+          "精神力": 15.5
+        },
+        "mean": {
+          "器用": 17.1,
+          "敏捷": 17.1,
+          "筋力": 22.4,
+          "生命力": 16.4,
+          "知力": 12,
+          "精神力": 18
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 19,
+          "筋力": 24,
+          "生命力": 18,
+          "知力": 13.5,
+          "精神力": 19.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 10,
+          "敏捷": 10,
+          "筋力": 15,
+          "生命力": 9,
+          "知力": 7,
+          "精神力": 13
+        },
+        "max": {
+          "器用": 24,
+          "敏捷": 24,
+          "筋力": 29,
+          "生命力": 23,
+          "知力": 16,
+          "精神力": 22
+        }
+      },
       "births": [
         {
-          "row": 417,
+          "row": 416,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "BR",
@@ -24142,7 +25261,7 @@
           }
         },
         {
-          "row": 418,
+          "row": 417,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "BR",
@@ -24194,7 +25313,7 @@
           }
         },
         {
-          "row": 419,
+          "row": 418,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BR",
@@ -24246,7 +25365,7 @@
           }
         },
         {
-          "row": 420,
+          "row": 419,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "BR",
@@ -24298,7 +25417,7 @@
           }
         },
         {
-          "row": 421,
+          "row": 420,
           "birthName": "部位操者",
           "initialSkill": "フィジカルマスター",
           "source": "BR",
@@ -24350,7 +25469,7 @@
           }
         },
         {
-          "row": 422,
+          "row": 421,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BR",
@@ -24402,7 +25521,7 @@
           }
         },
         {
-          "row": 423,
+          "row": 422,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "BR",
@@ -24454,7 +25573,7 @@
           }
         },
         {
-          "row": 424,
+          "row": 423,
           "birthName": "舞い手",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -24506,7 +25625,7 @@
           }
         },
         {
-          "row": 425,
+          "row": 424,
           "birthName": "参謀",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -24558,7 +25677,7 @@
           }
         },
         {
-          "row": 426,
+          "row": 425,
           "birthName": "賢者",
           "initialSkill": "セージ",
           "source": "BR",
@@ -24614,7 +25733,7 @@
     {
       "raceName": "ドレイク",
       "source": "BR",
-      "excelRow": 428,
+      "excelRow": 427,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "1d",
@@ -24650,9 +25769,53 @@
           "精神力": 19
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 14.5,
+          "敏捷": 14.5,
+          "筋力": 18,
+          "生命力": 18,
+          "知力": 18,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 15.6,
+          "敏捷": 15.6,
+          "筋力": 19.9,
+          "生命力": 19.9,
+          "知力": 20,
+          "精神力": 14
+        },
+        "max": {
+          "器用": 17.5,
+          "敏捷": 17.5,
+          "筋力": 22,
+          "生命力": 22,
+          "知力": 22,
+          "精神力": 16
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 12,
+          "敏捷": 12,
+          "筋力": 13,
+          "生命力": 13,
+          "知力": 13,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 20,
+          "敏捷": 20,
+          "筋力": 27,
+          "生命力": 27,
+          "知力": 27,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 429,
+          "row": 428,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "BR",
@@ -24704,7 +25867,7 @@
           }
         },
         {
-          "row": 430,
+          "row": 429,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "BR",
@@ -24756,7 +25919,7 @@
           }
         },
         {
-          "row": 431,
+          "row": 430,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BR",
@@ -24808,7 +25971,7 @@
           }
         },
         {
-          "row": 432,
+          "row": 431,
           "birthName": "部位操者",
           "initialSkill": "フィジカルマスター",
           "source": "BR",
@@ -24860,7 +26023,7 @@
           }
         },
         {
-          "row": 433,
+          "row": 432,
           "birthName": "賢者",
           "initialSkill": "セージ",
           "source": "BR",
@@ -24912,7 +26075,7 @@
           }
         },
         {
-          "row": 434,
+          "row": 433,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BR",
@@ -24964,7 +26127,7 @@
           }
         },
         {
-          "row": 435,
+          "row": 434,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -25016,7 +26179,7 @@
           }
         },
         {
-          "row": 436,
+          "row": 435,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -25068,7 +26231,7 @@
           }
         },
         {
-          "row": 437,
+          "row": 436,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "BR",
@@ -25120,7 +26283,7 @@
           }
         },
         {
-          "row": 438,
+          "row": 437,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -25176,7 +26339,7 @@
     {
       "raceName": "バジリスク",
       "source": "BR",
-      "excelRow": 440,
+      "excelRow": 439,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "1d+6",
@@ -25212,9 +26375,53 @@
           "精神力": 19.7
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 15.5,
+          "敏捷": 13,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 14.5,
+          "精神力": 14.5
+        },
+        "mean": {
+          "器用": 16.8,
+          "敏捷": 14.3,
+          "筋力": 19,
+          "生命力": 19,
+          "知力": 17.2,
+          "精神力": 17.2
+        },
+        "max": {
+          "器用": 18.5,
+          "敏捷": 16,
+          "筋力": 20,
+          "生命力": 20,
+          "知力": 19.5,
+          "精神力": 19.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 13,
+          "敏捷": 8,
+          "筋力": 12,
+          "生命力": 12,
+          "知力": 12,
+          "精神力": 12
+        },
+        "max": {
+          "器用": 21,
+          "敏捷": 21,
+          "筋力": 25,
+          "生命力": 25,
+          "知力": 22,
+          "精神力": 22
+        }
+      },
       "births": [
         {
-          "row": 441,
+          "row": 440,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "BR",
@@ -25266,7 +26473,7 @@
           }
         },
         {
-          "row": 442,
+          "row": 441,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -25318,7 +26525,7 @@
           }
         },
         {
-          "row": 443,
+          "row": 442,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BR",
@@ -25370,7 +26577,7 @@
           }
         },
         {
-          "row": 444,
+          "row": 443,
           "birthName": "部位操者",
           "initialSkill": "フィジカルマスター",
           "source": "BR",
@@ -25422,7 +26629,7 @@
           }
         },
         {
-          "row": 445,
+          "row": 444,
           "birthName": "賢者",
           "initialSkill": "セージ",
           "source": "BR",
@@ -25474,7 +26681,7 @@
           }
         },
         {
-          "row": 446,
+          "row": 445,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BR",
@@ -25526,7 +26733,7 @@
           }
         },
         {
-          "row": 447,
+          "row": 446,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BR",
@@ -25578,7 +26785,7 @@
           }
         },
         {
-          "row": 448,
+          "row": 447,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "BR",
@@ -25630,7 +26837,7 @@
           }
         },
         {
-          "row": 449,
+          "row": 448,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -25682,7 +26889,7 @@
           }
         },
         {
-          "row": 450,
+          "row": 449,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BR",
@@ -25738,7 +26945,7 @@
     {
       "raceName": "ダークトロール",
       "source": "BR",
-      "excelRow": 452,
+      "excelRow": 451,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -25774,9 +26981,53 @@
           "精神力": 19.2
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 15,
+          "敏捷": 11.5,
+          "筋力": 19,
+          "生命力": 25,
+          "知力": 8.5,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 16.8,
+          "敏捷": 13.3,
+          "筋力": 20,
+          "生命力": 26,
+          "知力": 10.7,
+          "精神力": 14.2
+        },
+        "max": {
+          "器用": 18,
+          "敏捷": 14.5,
+          "筋力": 21,
+          "生命力": 27,
+          "知力": 12.5,
+          "精神力": 16
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 10,
+          "敏捷": 9,
+          "筋力": 14,
+          "生命力": 20,
+          "知力": 6,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 23,
+          "敏捷": 17,
+          "筋力": 26,
+          "生命力": 32,
+          "知力": 15,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 453,
+          "row": 452,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "BR",
@@ -25828,7 +27079,7 @@
           }
         },
         {
-          "row": 454,
+          "row": 453,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "BR",
@@ -25880,7 +27131,7 @@
           }
         },
         {
-          "row": 455,
+          "row": 454,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BR",
@@ -25932,7 +27183,7 @@
           }
         },
         {
-          "row": 456,
+          "row": 455,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BR",
@@ -25984,7 +27235,7 @@
           }
         },
         {
-          "row": 457,
+          "row": 456,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "BR",
@@ -26036,7 +27287,7 @@
           }
         },
         {
-          "row": 458,
+          "row": 457,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -26088,7 +27339,7 @@
           }
         },
         {
-          "row": 459,
+          "row": 458,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BR",
@@ -26140,7 +27391,7 @@
           }
         },
         {
-          "row": 460,
+          "row": 459,
           "birthName": "舞い手",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -26192,7 +27443,7 @@
           }
         },
         {
-          "row": 461,
+          "row": 460,
           "birthName": "騎手",
           "initialSkill": "ライダー",
           "source": "BR",
@@ -26244,7 +27495,7 @@
           }
         },
         {
-          "row": 462,
+          "row": 461,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "BR",
@@ -26300,7 +27551,7 @@
     {
       "raceName": "アルボル",
       "source": "BR",
-      "excelRow": 464,
+      "excelRow": 463,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -26336,9 +27587,53 @@
           "精神力": 23.8
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 16,
+          "敏捷": 16,
+          "筋力": 10.5,
+          "生命力": 13.5,
+          "知力": 17,
+          "精神力": 17
+        },
+        "mean": {
+          "器用": 17.3,
+          "敏捷": 17.3,
+          "筋力": 11.4,
+          "生命力": 14.4,
+          "知力": 18.8,
+          "精神力": 18.8
+        },
+        "max": {
+          "器用": 19,
+          "敏捷": 19,
+          "筋力": 13.5,
+          "生命力": 16.5,
+          "知力": 21,
+          "精神力": 21
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 11,
+          "敏捷": 11,
+          "筋力": 8,
+          "生命力": 11,
+          "知力": 12,
+          "精神力": 12
+        },
+        "max": {
+          "器用": 24,
+          "敏捷": 24,
+          "筋力": 16,
+          "生命力": 19,
+          "知力": 26,
+          "精神力": 26
+        }
+      },
       "births": [
         {
-          "row": 465,
+          "row": 464,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "BR",
@@ -26390,7 +27685,7 @@
           }
         },
         {
-          "row": 466,
+          "row": 465,
           "birthName": "真語術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -26442,7 +27737,7 @@
           }
         },
         {
-          "row": 467,
+          "row": 466,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "BR",
@@ -26494,7 +27789,7 @@
           }
         },
         {
-          "row": 468,
+          "row": 467,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BR",
@@ -26546,7 +27841,7 @@
           }
         },
         {
-          "row": 469,
+          "row": 468,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "BR",
@@ -26598,7 +27893,7 @@
           }
         },
         {
-          "row": 470,
+          "row": 469,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BR",
@@ -26650,7 +27945,7 @@
           }
         },
         {
-          "row": 471,
+          "row": 470,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BR",
@@ -26702,7 +27997,7 @@
           }
         },
         {
-          "row": 472,
+          "row": 471,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BR",
@@ -26754,7 +28049,7 @@
           }
         },
         {
-          "row": 473,
+          "row": 472,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -26806,7 +28101,7 @@
           }
         },
         {
-          "row": 474,
+          "row": 473,
           "birthName": "賢者",
           "initialSkill": "セージ",
           "source": "BR",
@@ -26862,7 +28157,7 @@
     {
       "raceName": "バーバヤガー",
       "source": "BR",
-      "excelRow": 476,
+      "excelRow": 475,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -26898,9 +28193,53 @@
           "精神力": 21.9
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 10.5,
+          "筋力": 9.5,
+          "生命力": 9.5,
+          "知力": 15,
+          "精神力": 17.5
+        },
+        "mean": {
+          "器用": 15.2,
+          "敏捷": 11.7,
+          "筋力": 11.4,
+          "生命力": 11.4,
+          "知力": 16.9,
+          "精神力": 19.4
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 13.5,
+          "筋力": 13.5,
+          "生命力": 13.5,
+          "知力": 19,
+          "精神力": 21.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 9,
+          "敏捷": 8,
+          "筋力": 7,
+          "生命力": 7,
+          "知力": 10,
+          "精神力": 15
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 16,
+          "筋力": 16,
+          "生命力": 16,
+          "知力": 24,
+          "精神力": 24
+        }
+      },
       "births": [
         {
-          "row": 477,
+          "row": 476,
           "birthName": "賢者",
           "initialSkill": "セージ",
           "source": "BR",
@@ -26952,7 +28291,7 @@
           }
         },
         {
-          "row": 478,
+          "row": 477,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "BR",
@@ -27004,7 +28343,7 @@
           }
         },
         {
-          "row": 479,
+          "row": 478,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -27056,7 +28395,7 @@
           }
         },
         {
-          "row": 480,
+          "row": 479,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BR",
@@ -27108,7 +28447,7 @@
           }
         },
         {
-          "row": 481,
+          "row": 480,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "BR",
@@ -27160,7 +28499,7 @@
           }
         },
         {
-          "row": 482,
+          "row": 481,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "BR",
@@ -27212,7 +28551,7 @@
           }
         },
         {
-          "row": 483,
+          "row": 482,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -27264,7 +28603,7 @@
           }
         },
         {
-          "row": 484,
+          "row": 483,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BR",
@@ -27316,7 +28655,7 @@
           }
         },
         {
-          "row": 485,
+          "row": 484,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BR",
@@ -27368,7 +28707,7 @@
           }
         },
         {
-          "row": 486,
+          "row": 485,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BR",
@@ -27424,7 +28763,7 @@
     {
       "raceName": "ケンタウロス",
       "source": "BR",
-      "excelRow": 488,
+      "excelRow": 487,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d+6",
@@ -27460,9 +28799,53 @@
           "精神力": 21.1
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 20,
+          "敏捷": 10.5,
+          "筋力": 14,
+          "生命力": 14,
+          "知力": 10.5,
+          "精神力": 14
+        },
+        "mean": {
+          "器用": 21.3,
+          "敏捷": 11.8,
+          "筋力": 15.6,
+          "生命力": 15.6,
+          "知力": 12.6,
+          "精神力": 16.1
+        },
+        "max": {
+          "器用": 23,
+          "敏捷": 13.5,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 14.5,
+          "精神力": 18
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 15,
+          "敏捷": 8,
+          "筋力": 9,
+          "生命力": 9,
+          "知力": 8,
+          "精神力": 9
+        },
+        "max": {
+          "器用": 28,
+          "敏捷": 16,
+          "筋力": 22,
+          "生命力": 22,
+          "知力": 17,
+          "精神力": 23
+        }
+      },
       "births": [
         {
-          "row": 489,
+          "row": 488,
           "birthName": "練体士",
           "initialSkill": "エンハンサー",
           "source": "BR",
@@ -27514,7 +28897,7 @@
           }
         },
         {
-          "row": 490,
+          "row": 489,
           "birthName": "妖精使い",
           "initialSkill": "フェアリーテイマー",
           "source": "BR",
@@ -27566,7 +28949,7 @@
           }
         },
         {
-          "row": 491,
+          "row": 490,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BR",
@@ -27618,7 +29001,7 @@
           }
         },
         {
-          "row": 492,
+          "row": 491,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -27670,7 +29053,7 @@
           }
         },
         {
-          "row": 493,
+          "row": 492,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "BR",
@@ -27722,7 +29105,7 @@
           }
         },
         {
-          "row": 494,
+          "row": 493,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BR",
@@ -27774,7 +29157,7 @@
           }
         },
         {
-          "row": 495,
+          "row": 494,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "BR",
@@ -27826,7 +29209,7 @@
           }
         },
         {
-          "row": 496,
+          "row": 495,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -27878,7 +29261,7 @@
           }
         },
         {
-          "row": 497,
+          "row": 496,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -27930,7 +29313,7 @@
           }
         },
         {
-          "row": 498,
+          "row": 497,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BR",
@@ -27986,7 +29369,7 @@
     {
       "raceName": "シザースコーピオン",
       "source": "BR",
-      "excelRow": 500,
+      "excelRow": 499,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "1d+6",
@@ -28022,9 +29405,53 @@
           "精神力": 19.2
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 17.5,
+          "敏捷": 11.5,
+          "筋力": 14,
+          "生命力": 14,
+          "知力": 12,
+          "精神力": 12
+        },
+        "mean": {
+          "器用": 19.5,
+          "敏捷": 13.5,
+          "筋力": 15.8,
+          "生命力": 15.8,
+          "知力": 14.2,
+          "精神力": 14.2
+        },
+        "max": {
+          "器用": 21.5,
+          "敏捷": 15.5,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 16,
+          "精神力": 16
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 15,
+          "敏捷": 9,
+          "筋力": 9,
+          "生命力": 9,
+          "知力": 7,
+          "精神力": 7
+        },
+        "max": {
+          "器用": 24,
+          "敏捷": 18,
+          "筋力": 22,
+          "生命力": 22,
+          "知力": 21,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 501,
+          "row": 500,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "BR",
@@ -28076,7 +29503,7 @@
           }
         },
         {
-          "row": 502,
+          "row": 501,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "BR",
@@ -28128,7 +29555,7 @@
           }
         },
         {
-          "row": 503,
+          "row": 502,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BR",
@@ -28180,7 +29607,7 @@
           }
         },
         {
-          "row": 504,
+          "row": 503,
           "birthName": "部位操者",
           "initialSkill": "フィジカルマスター",
           "source": "BR",
@@ -28232,7 +29659,7 @@
           }
         },
         {
-          "row": 505,
+          "row": 504,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "BR",
@@ -28284,7 +29711,7 @@
           }
         },
         {
-          "row": 506,
+          "row": 505,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -28336,7 +29763,7 @@
           }
         },
         {
-          "row": 507,
+          "row": 506,
           "birthName": "賢者",
           "initialSkill": "セージ",
           "source": "BR",
@@ -28388,7 +29815,7 @@
           }
         },
         {
-          "row": 508,
+          "row": 507,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -28440,7 +29867,7 @@
           }
         },
         {
-          "row": 509,
+          "row": 508,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -28492,7 +29919,7 @@
           }
         },
         {
-          "row": 510,
+          "row": 509,
           "birthName": "錬金術師",
           "initialSkill": "アルケミスト",
           "source": "BR",
@@ -28548,7 +29975,7 @@
     {
       "raceName": "ドーン",
       "source": "BR",
-      "excelRow": 512,
+      "excelRow": 511,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d+6",
@@ -28584,9 +30011,53 @@
           "精神力": 16.1
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 22,
+          "敏捷": 16,
+          "筋力": 7.5,
+          "生命力": 11,
+          "知力": 15,
+          "精神力": 11.5
+        },
+        "mean": {
+          "器用": 23.8,
+          "敏捷": 17.8,
+          "筋力": 9.6,
+          "生命力": 13.1,
+          "知力": 17.1,
+          "精神力": 13.6
+        },
+        "max": {
+          "器用": 25,
+          "敏捷": 19,
+          "筋力": 11.5,
+          "生命力": 15,
+          "知力": 19,
+          "精神力": 15.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 17,
+          "敏捷": 11,
+          "筋力": 5,
+          "生命力": 6,
+          "知力": 10,
+          "精神力": 9
+        },
+        "max": {
+          "器用": 30,
+          "敏捷": 24,
+          "筋力": 14,
+          "生命力": 20,
+          "知力": 24,
+          "精神力": 18
+        }
+      },
       "births": [
         {
-          "row": 513,
+          "row": 512,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -28638,7 +30109,7 @@
           }
         },
         {
-          "row": 514,
+          "row": 513,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "BR",
@@ -28690,7 +30161,7 @@
           }
         },
         {
-          "row": 515,
+          "row": 514,
           "birthName": "暗殺者",
           "initialSkill": "フェンサー",
           "source": "BR",
@@ -28742,7 +30213,7 @@
           }
         },
         {
-          "row": 516,
+          "row": 515,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "BR",
@@ -28794,7 +30265,7 @@
           }
         },
         {
-          "row": 517,
+          "row": 516,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BR",
@@ -28846,7 +30317,7 @@
           }
         },
         {
-          "row": 518,
+          "row": 517,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BR",
@@ -28898,7 +30369,7 @@
           }
         },
         {
-          "row": 519,
+          "row": 518,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "BR",
@@ -28950,7 +30421,7 @@
           }
         },
         {
-          "row": 520,
+          "row": 519,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -29002,7 +30473,7 @@
           }
         },
         {
-          "row": 521,
+          "row": 520,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BR",
@@ -29054,7 +30525,7 @@
           }
         },
         {
-          "row": 522,
+          "row": 521,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BR",
@@ -29110,7 +30581,7 @@
     {
       "raceName": "コボルド",
       "source": "BR",
-      "excelRow": 524,
+      "excelRow": 523,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "2d",
@@ -29146,9 +30617,53 @@
           "精神力": 17.9
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 13,
+          "敏捷": 13,
+          "筋力": 6.5,
+          "生命力": 6.5,
+          "知力": 11,
+          "精神力": 11
+        },
+        "mean": {
+          "器用": 14.5,
+          "敏捷": 14.5,
+          "筋力": 8.1,
+          "生命力": 8.1,
+          "知力": 12.9,
+          "精神力": 12.9
+        },
+        "max": {
+          "器用": 16,
+          "敏捷": 16,
+          "筋力": 9.5,
+          "生命力": 9.5,
+          "知力": 15,
+          "精神力": 15
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 8,
+          "敏捷": 8,
+          "筋力": 4,
+          "生命力": 4,
+          "知力": 6,
+          "精神力": 6
+        },
+        "max": {
+          "器用": 21,
+          "敏捷": 21,
+          "筋力": 12,
+          "生命力": 12,
+          "知力": 20,
+          "精神力": 20
+        }
+      },
       "births": [
         {
-          "row": 525,
+          "row": 524,
           "birthName": "趣味人",
           "initialSkill": "セージorバード",
           "source": "BR",
@@ -29200,7 +30715,7 @@
           }
         },
         {
-          "row": 526,
+          "row": 525,
           "birthName": "斥候",
           "initialSkill": "スカウト",
           "source": "BR",
@@ -29252,7 +30767,7 @@
           }
         },
         {
-          "row": 527,
+          "row": 526,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "BR",
@@ -29304,7 +30819,7 @@
           }
         },
         {
-          "row": 528,
+          "row": 527,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "BR",
@@ -29356,7 +30871,7 @@
           }
         },
         {
-          "row": 529,
+          "row": 528,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BR",
@@ -29408,7 +30923,7 @@
           }
         },
         {
-          "row": 530,
+          "row": 529,
           "birthName": "参謀",
           "initialSkill": "ウォーリーダー",
           "source": "BR",
@@ -29460,7 +30975,7 @@
           }
         },
         {
-          "row": 531,
+          "row": 530,
           "birthName": "天地使い",
           "initialSkill": "ジオマンサー",
           "source": "BR",
@@ -29512,7 +31027,7 @@
           }
         },
         {
-          "row": 532,
+          "row": 531,
           "birthName": "舞い手",
           "initialSkill": "バトルダンサー",
           "source": "BR",
@@ -29564,7 +31079,7 @@
           }
         },
         {
-          "row": 533,
+          "row": 532,
           "birthName": "射手",
           "initialSkill": "シューター",
           "source": "BR",
@@ -29616,7 +31131,7 @@
           }
         },
         {
-          "row": 534,
+          "row": 533,
           "birthName": "魔動機師",
           "initialSkill": "マギテック",
           "source": "BR",
@@ -29672,7 +31187,7 @@
     {
       "raceName": "ドレイクブロークン",
       "source": "BS",
-      "excelRow": 536,
+      "excelRow": 535,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "1d",
@@ -29708,9 +31223,53 @@
           "精神力": 18.2
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 13.5,
+          "敏捷": 13.5,
+          "筋力": 17,
+          "生命力": 17,
+          "知力": 17,
+          "精神力": 11
+        },
+        "mean": {
+          "器用": 15.3,
+          "敏捷": 15.3,
+          "筋力": 19,
+          "生命力": 19,
+          "知力": 19.2,
+          "精神力": 13.2
+        },
+        "max": {
+          "器用": 17.5,
+          "敏捷": 17.5,
+          "筋力": 21,
+          "生命力": 21,
+          "知力": 21,
+          "精神力": 15
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 11,
+          "敏捷": 11,
+          "筋力": 12,
+          "生命力": 12,
+          "知力": 12,
+          "精神力": 6
+        },
+        "max": {
+          "器用": 20,
+          "敏捷": 20,
+          "筋力": 26,
+          "生命力": 26,
+          "知力": 26,
+          "精神力": 20
+        }
+      },
       "births": [
         {
-          "row": 537,
+          "row": 536,
           "birthName": "斥候",
           "initialSkill": "スカウトorレンジャー",
           "source": "BS",
@@ -29762,7 +31321,7 @@
           }
         },
         {
-          "row": 538,
+          "row": 537,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "BS",
@@ -29814,7 +31373,7 @@
           }
         },
         {
-          "row": 539,
+          "row": 538,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BS",
@@ -29866,7 +31425,7 @@
           }
         },
         {
-          "row": 540,
+          "row": 539,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BS",
@@ -29918,7 +31477,7 @@
           }
         },
         {
-          "row": 541,
+          "row": 540,
           "birthName": "賢者",
           "initialSkill": "セージ",
           "source": "BS",
@@ -29970,7 +31529,7 @@
           }
         },
         {
-          "row": 542,
+          "row": 541,
           "birthName": "軍師",
           "initialSkill": "ウォーリーダー",
           "source": "BS",
@@ -30022,7 +31581,7 @@
           }
         },
         {
-          "row": 543,
+          "row": 542,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "BS",
@@ -30074,7 +31633,7 @@
           }
         },
         {
-          "row": 544,
+          "row": 543,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BS",
@@ -30126,7 +31685,7 @@
           }
         },
         {
-          "row": 545,
+          "row": 544,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BS",
@@ -30178,7 +31737,7 @@
           }
         },
         {
-          "row": 546,
+          "row": 545,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BS",
@@ -30234,7 +31793,7 @@
     {
       "raceName": "ラミア",
       "source": "BS",
-      "excelRow": 548,
+      "excelRow": 547,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "1d",
@@ -30270,9 +31829,53 @@
           "精神力": 26.1
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 10.5,
+          "敏捷": 14,
+          "筋力": 10.5,
+          "生命力": 14,
+          "知力": 19,
+          "精神力": 19
+        },
+        "mean": {
+          "器用": 12.4,
+          "敏捷": 15.9,
+          "筋力": 11.5,
+          "生命力": 15,
+          "知力": 21.1,
+          "精神力": 21.1
+        },
+        "max": {
+          "器用": 14.5,
+          "敏捷": 18,
+          "筋力": 12.5,
+          "生命力": 16,
+          "知力": 23,
+          "精神力": 23
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 8,
+          "敏捷": 9,
+          "筋力": 8,
+          "生命力": 9,
+          "知力": 14,
+          "精神力": 14
+        },
+        "max": {
+          "器用": 17,
+          "敏捷": 23,
+          "筋力": 15,
+          "生命力": 21,
+          "知力": 28,
+          "精神力": 28
+        }
+      },
       "births": [
         {
-          "row": 549,
+          "row": 548,
           "birthName": "学者",
           "initialSkill": "セージ",
           "source": "BS",
@@ -30324,7 +31927,7 @@
           }
         },
         {
-          "row": 550,
+          "row": 549,
           "birthName": "操霊術師",
           "initialSkill": "コンジャラー",
           "source": "BS",
@@ -30376,7 +31979,7 @@
           }
         },
         {
-          "row": 551,
+          "row": 550,
           "birthName": "魔術師",
           "initialSkill": "ソーサラー",
           "source": "BS",
@@ -30428,7 +32031,7 @@
           }
         },
         {
-          "row": 552,
+          "row": 551,
           "birthName": "戦士",
           "initialSkill": "ファイターorグラップラー",
           "source": "BS",
@@ -30480,7 +32083,7 @@
           }
         },
         {
-          "row": 553,
+          "row": 552,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BS",
@@ -30532,7 +32135,7 @@
           }
         },
         {
-          "row": 554,
+          "row": 553,
           "birthName": "参謀",
           "initialSkill": "ウォーリーダー",
           "source": "BS",
@@ -30584,7 +32187,7 @@
           }
         },
         {
-          "row": 555,
+          "row": 554,
           "birthName": "野伏",
           "initialSkill": "レンジャー",
           "source": "BS",
@@ -30636,7 +32239,7 @@
           }
         },
         {
-          "row": 556,
+          "row": 555,
           "birthName": "密偵",
           "initialSkill": "スカウト",
           "source": "BS",
@@ -30688,7 +32291,7 @@
           }
         },
         {
-          "row": 557,
+          "row": 556,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BS",
@@ -30740,7 +32343,7 @@
           }
         },
         {
-          "row": 558,
+          "row": 557,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BS",
@@ -30796,7 +32399,7 @@
     {
       "raceName": "ラルヴァ",
       "source": "BS",
-      "excelRow": 560,
+      "excelRow": 559,
       "birthCount": 10,
       "baseExpressions": {
         "器用": "1d",
@@ -30832,9 +32435,53 @@
           "精神力": 18
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 13.5,
+          "敏捷": 17,
+          "筋力": 19,
+          "生命力": 9.5,
+          "知力": 17,
+          "精神力": 13.5
+        },
+        "mean": {
+          "器用": 14.9,
+          "敏捷": 18.4,
+          "筋力": 20.6,
+          "生命力": 11.1,
+          "知力": 19,
+          "精神力": 15.5
+        },
+        "max": {
+          "器用": 17.5,
+          "敏捷": 21,
+          "筋力": 22,
+          "生命力": 12.5,
+          "知力": 22,
+          "精神力": 18.5
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 11,
+          "敏捷": 12,
+          "筋力": 14,
+          "生命力": 7,
+          "知力": 12,
+          "精神力": 11
+        },
+        "max": {
+          "器用": 20,
+          "敏捷": 26,
+          "筋力": 27,
+          "生命力": 15,
+          "知力": 27,
+          "精神力": 21
+        }
+      },
       "births": [
         {
-          "row": 561,
+          "row": 560,
           "birthName": "魔法使い",
           "initialSkill": "ソーサラーorコンジャラー",
           "source": "BS",
@@ -30886,7 +32533,7 @@
           }
         },
         {
-          "row": 562,
+          "row": 561,
           "birthName": "神官",
           "initialSkill": "プリースト",
           "source": "BS",
@@ -30938,7 +32585,7 @@
           }
         },
         {
-          "row": 563,
+          "row": 562,
           "birthName": "戦士",
           "initialSkill": "ファイター",
           "source": "BS",
@@ -30990,7 +32637,7 @@
           }
         },
         {
-          "row": 564,
+          "row": 563,
           "birthName": "拳闘士",
           "initialSkill": "グラップラー",
           "source": "BS",
@@ -31042,7 +32689,7 @@
           }
         },
         {
-          "row": 565,
+          "row": 564,
           "birthName": "軽戦士",
           "initialSkill": "フェンサー",
           "source": "BS",
@@ -31094,7 +32741,7 @@
           }
         },
         {
-          "row": 566,
+          "row": 565,
           "birthName": "隠者",
           "initialSkill": "セージ",
           "source": "BS",
@@ -31146,7 +32793,7 @@
           }
         },
         {
-          "row": 567,
+          "row": 566,
           "birthName": "参謀",
           "initialSkill": "ウォーリーダー",
           "source": "BS",
@@ -31198,7 +32845,7 @@
           }
         },
         {
-          "row": 568,
+          "row": 567,
           "birthName": "戦舞士",
           "initialSkill": "バトルダンサー",
           "source": "BS",
@@ -31250,7 +32897,7 @@
           }
         },
         {
-          "row": 569,
+          "row": 568,
           "birthName": "森羅導師",
           "initialSkill": "ドルイド",
           "source": "BS",
@@ -31302,7 +32949,7 @@
           }
         },
         {
-          "row": 570,
+          "row": 569,
           "birthName": "魔神使い",
           "initialSkill": "デーモンルーラー",
           "source": "BS",
@@ -31358,7 +33005,7 @@
     {
       "raceName": "化け猫",
       "source": "龍骸",
-      "excelRow": 572,
+      "excelRow": 571,
       "birthCount": 4,
       "baseExpressions": {
         "器用": "1d",
@@ -31394,9 +33041,53 @@
           "精神力": 17
         }
       },
+      "birthAverageRange": {
+        "min": {
+          "器用": 16.5,
+          "敏捷": 20,
+          "筋力": 7.5,
+          "生命力": 11,
+          "知力": 16,
+          "精神力": 10
+        },
+        "mean": {
+          "器用": 18,
+          "敏捷": 21.5,
+          "筋力": 9,
+          "生命力": 12.5,
+          "知力": 18,
+          "精神力": 12
+        },
+        "max": {
+          "器用": 19.5,
+          "敏捷": 23,
+          "筋力": 10.5,
+          "生命力": 14,
+          "知力": 19,
+          "精神力": 13
+        }
+      },
+      "combinedRange": {
+        "min": {
+          "器用": 14,
+          "敏捷": 15,
+          "筋力": 5,
+          "生命力": 6,
+          "知力": 11,
+          "精神力": 5
+        },
+        "max": {
+          "器用": 22,
+          "敏捷": 28,
+          "筋力": 13,
+          "生命力": 19,
+          "知力": 24,
+          "精神力": 18
+        }
+      },
       "births": [
         {
-          "row": 573,
+          "row": 572,
           "birthName": "侍",
           "initialSkill": "",
           "source": "龍骸",
@@ -31448,7 +33139,7 @@
           }
         },
         {
-          "row": 574,
+          "row": 573,
           "birthName": "忍者",
           "initialSkill": "",
           "source": "龍骸",
@@ -31500,7 +33191,7 @@
           }
         },
         {
-          "row": 575,
+          "row": 574,
           "birthName": "呪術師",
           "initialSkill": "",
           "source": "龍骸",
@@ -31552,7 +33243,7 @@
           }
         },
         {
-          "row": 576,
+          "row": 575,
           "birthName": "巫覡",
           "initialSkill": "",
           "source": "龍骸",

@@ -153,6 +153,20 @@ def aggregate_race(race: RaceSource) -> dict[str, Any]:
             values = [birth["stats"][kind][ability] for birth in race.births]
             stats[kind][ability] = round_number(sum(values) / len(values))
 
+    birth_average_range = {"min": {}, "mean": {}, "max": {}}
+    for ability in ABILITIES:
+        values = [birth["stats"]["avg"][ability] for birth in race.births]
+        birth_average_range["min"][ability] = round_number(min(values))
+        birth_average_range["mean"][ability] = round_number(sum(values) / len(values))
+        birth_average_range["max"][ability] = round_number(max(values))
+
+    combined_range = {"min": {}, "max": {}}
+    for ability in ABILITIES:
+        min_values = [birth["stats"]["min"][ability] for birth in race.births]
+        max_values = [birth["stats"]["max"][ability] for birth in race.births]
+        combined_range["min"][ability] = round_number(min(min_values))
+        combined_range["max"][ability] = round_number(max(max_values))
+
     return {
         "raceName": race.race_name,
         "source": race.source,
@@ -163,6 +177,8 @@ def aggregate_race(race: RaceSource) -> dict[str, Any]:
             for ability in ABILITIES
         },
         "stats": stats,
+        "birthAverageRange": birth_average_range,
+        "combinedRange": combined_range,
         "births": race.births,
     }
 
