@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ソードワールド 種族ステータス集計</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <div>
+          <h1>種族ステータス集計</h1>
+          <p>集計済みデータから、種族ごとの最小・平均・最大を確認します。</p>
+        </div>
+        <label class="search">
+          <span>種族検索</span>
+          <input id="raceFilter" type="search" placeholder="例: 人間">
+        </label>
+      </header>
+
+      <section class="chart-panel" aria-label="選択した種族のレーダーチャート">
+        <div class="chart-toolbar">
+          <label class="select-field">
+            <span>チャート表示する種族</span>
+            <select id="raceSelect"></select>
+          </label>
+          <div class="dice-config" id="diceConfig"></div>
+        </div>
+
+        <div class="chart-grid">
+          <div class="chart-box">
+            <canvas id="raceChart" width="640" height="480"></canvas>
+          </div>
+          <aside class="race-info" id="raceInfo"></aside>
+        </div>
+      </section>
+
+      <section class="summary" id="summary"></section>
+
+      <section class="detail-section">
+        <div class="section-heading">
+          <h2>詳細確認用の表</h2>
+          <p>グラフの元になっている集計値を一覧で確認できます。</p>
+        </div>
+        <div class="table-wrap" aria-label="種族ごとの集計表">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="vendor/chart.umd.min.js"></script>
+    <script src="data/race-stats.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
