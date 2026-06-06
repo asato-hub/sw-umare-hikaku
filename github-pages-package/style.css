@@ -121,7 +121,26 @@ p {
 }
 
 .chart-box {
+  position: relative;
   min-height: 440px;
+}
+
+.chart-box canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.chart-fade-image {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 1s linear;
+}
+
+.chart-fade-image.is-fading {
+  opacity: 0;
 }
 
 .race-info {

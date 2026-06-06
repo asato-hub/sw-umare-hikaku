@@ -4,7 +4,7 @@ const kinds = [
   { key: "avg", label: "平均" },
   { key: "max", label: "最大" },
 ];
-const chartMaxValue = 35;
+const chartMaxValue = 30;
 
 const tableHead = document.querySelector("#tableHead");
 const tableBody = document.querySelector("#tableBody");
@@ -17,6 +17,22 @@ const chartCanvas = document.querySelector("#raceChart");
 
 let raceData = [];
 let raceChart = null;
+
+const centerDotPlugin = {
+  id: "centerDot",
+  afterDraw(chart) {
+    const scale = chart.scales.r;
+    if (!scale) return;
+
+    const { ctx } = chart;
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(scale.xCenter, scale.yCenter, 4, 0, Math.PI * 2);
+    ctx.fillStyle = "#000000";
+    ctx.fill();
+    ctx.restore();
+  },
+};
 
 function formatNumber(value) {
   return Number.isInteger(value) ? String(value) : value.toFixed(2).replace(/0+$/, "").replace(/\.$/, "");
@@ -107,6 +123,25 @@ function buildChartData(race) {
   };
 }
 
+function fadePreviousChartImage() {
+  if (!raceChart || !chartCanvas.parentElement) return;
+
+  const parentRect = chartCanvas.parentElement.getBoundingClientRect();
+  const canvasRect = chartCanvas.getBoundingClientRect();
+  const image = document.createElement("img");
+  image.className = "chart-fade-image";
+  image.alt = "";
+  image.src = chartCanvas.toDataURL("image/png");
+  image.style.left = `${canvasRect.left - parentRect.left}px`;
+  image.style.top = `${canvasRect.top - parentRect.top}px`;
+  image.style.width = `${canvasRect.width}px`;
+  image.style.height = `${canvasRect.height}px`;
+
+  chartCanvas.parentElement.appendChild(image);
+  requestAnimationFrame(() => image.classList.add("is-fading"));
+  window.setTimeout(() => image.remove(), 1000);
+}
+
 function renderChart(race) {
   if (!window.Chart) {
     raceInfo.innerHTML = `
@@ -118,19 +153,23 @@ function renderChart(race) {
   const chartData = buildChartData(race);
 
   if (raceChart) {
+    fadePreviousChartImage();
     raceChart.data = chartData;
     raceChart.options.scales.r.min = 0;
     raceChart.options.scales.r.max = chartMaxValue;
-    raceChart.update();
+    raceChart.options.plugins.title.text = `${race.raceName}の能力値`;
+    raceChart.update("none");
     return;
   }
 
   raceChart = new window.Chart(chartCanvas, {
     type: "radar",
     data: chartData,
+    plugins: [centerDotPlugin],
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      animation: false,
       plugins: {
         legend: {
           position: "bottom",
